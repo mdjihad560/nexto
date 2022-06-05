@@ -1,0 +1,7 @@
+ 
+ h3{
+     color: red;
+     @media (max-width: 1200px) {
+        color: black;
+    }
+ }

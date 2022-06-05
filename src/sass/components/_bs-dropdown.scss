@@ -1,0 +1,53 @@
+.dropdown-toggle {
+  &::after {
+    border: none;
+    content: "\f101";
+    font-family: "flaticon";
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 15px;
+    @include breakpoint(xl) {
+      margin-left: 5px;
+    }
+  }
+}
+.fromGroup {
+  .btn-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-500) !important;
+  }
+}
+.dropdown-menu {
+  padding: 7px 0px;
+  color: var(--gray-700);
+  border: none;
+  border: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 24px rgba(25, 27, 28, 0.16);
+  border-radius: 4px;
+  min-width: 160px;
+}
+.dropdown-item {
+  color: var(--gray-600);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 5px 15px !important;
+  &:hover {
+    background-color: transparent;
+    color: var(--danger-500);
+  }
+  svg {
+    margin-right: 4px;
+  }
+  path {
+    transition: all 0.4s;
+    stroke: var(--gray-600);
+  }
+  &:hover {
+    path {
+      stroke: var(--danger-500);
+    }
+  }
+}

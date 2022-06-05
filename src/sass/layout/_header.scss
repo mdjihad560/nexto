@@ -1,0 +1,22 @@
+
+
+.nexto-btn{
+  &.nexto-gradient-btn{
+    color: #fff;
+    padding: 10.5px 31px;
+    background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+  }
+}
+
+header.nexto-header-section {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  padding: 15px 0;
+  transition: all 0.4s;
+}
+header.nexto-header-section.sticky-menu{
+  padding: 10px 0;
+  background-color: var(--gray-800);
+}
