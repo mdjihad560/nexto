@@ -77,14 +77,14 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: var(--gray-10);
   margin: 0 0 10px;
 }
 .nexto-card-data p{
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: var(--gray-10);
   opacity: 0.4;
   margin: 0;
 }
@@ -100,18 +100,18 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: var(--gray-10);
 }
 .nexto-card-footer-data h4{
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: var(--gray-10);
   margin: 0;
 }
 
 a.nexto-card-btn {
-  background: #FFFFFF;
+  background: var(--gray-10);
   border-radius: 10px;
   display: inline-block;
   padding: 10px 24.4px;
@@ -123,7 +123,7 @@ a.nexto-card-btn {
   transition: all 0.4s;
 }
 .nexto-card-wrap:hover a.nexto-card-btn{
-  color: #FFFFFF;
+  color: var(--gray-10);
   background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
 }
 
@@ -151,12 +151,12 @@ a.nexto-card-btn {
   background-size: 10px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #FFFFFF;
+  background-color: var(--gray-10);
   border: 5px solid #13111A;
   transition: all 0.4s;
 }
 .card-slider-arrow button:hover{
-  background-color: #FFFFFF;
+  background-color: var(--gray-10);
 }
 
 @media (max-width: 1360px) {
