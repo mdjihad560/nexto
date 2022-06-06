@@ -10,11 +10,13 @@
   font-family: $button_font_family;
   overflow: hidden;
   width: fit-content;
-  font-weight: 600;
   position: relative;
   z-index: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
   
   // &.icon-btn {
   //   padding: 0;
@@ -97,6 +99,7 @@
     position: absolute;
     transition: all 0.4s;
     opacity: 0;
+    border-radius: 10px;
     background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
   }
   &:hover:before{

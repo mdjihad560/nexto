@@ -29,6 +29,42 @@ $(window).on('scroll', function(){
 
 });
 
+/*--------------------------------------------------------------
+COUNTER JS INIT
+--------------------------------------------------------------*/
+var nexto_counter = $('#nexto-counter');
+  if(nexto_counter.is_exist()){
+      var a = 0;
+      $(window).scroll(function() {
+
+        var oTop = $(nexto_counter).offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+          $('.nexto-counter').each(function() {
+            var $this = $(this),
+              countTo = $this.attr('data-percentage');
+            $({
+              countNum: $this.text()
+            }).animate({
+                countNum: countTo
+              },
+              {
+                duration: 4000,
+                easing: 'swing',
+                step: function() {
+                  $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                  $this.text(this.countNum);
+                }
+              });
+          });
+          a = 1;
+        }
+
+      });
+}
+
+
   
   
   

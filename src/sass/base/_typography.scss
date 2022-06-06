@@ -11,18 +11,45 @@ h6,
 .h5,
 .h6 {
   font-family: $heading-font;
-  color: var(--gray-900);
-  font-weight: 500;
+  color: white;
+  font-weight: 700;
 }
-
-@each $cheadingfont in $headingfontSize {
-  $i: index($headingfontSize, $cheadingfont);
-  h#{$i},
-  .text-h#{$i} {
-    font-size: $cheadingfont;
-    line-height: nth($headingLineheight, $i);
+h1,
+.h1 {
+  font-size: 80px;
+  line-height: 90px;
+  margin-bottom: 20px;
+  @include max(1400px) { 
+    font-size: 70px;
+    line-height: 80px;
+  }
+  @include max(1199px) { 
+    font-size: 60px;
+    line-height: 75px;
+  }
+  @include max(991px) { 
+    font-size: 48px;
+    line-height: 65px;
+  }
+  @include max(767px) { 
+    font-size: 36px;
+    line-height: 48px;
   }
 }
+h2,
+.h2 {
+  font-size: 42px;
+  line-height: 48px;
+}
+
+// @each $cheadingfont in $headingfontSize {
+//   $i: index($headingfontSize, $cheadingfont);
+//   h#{$i},
+//   .text-h#{$i} {
+//     font-size: $cheadingfont;
+//     line-height: nth($headingLineheight, $i);
+//   }
+// }
 
 
 @for $i from 10 through 40 {
@@ -54,10 +81,10 @@ h6,
 }
 
 
-@each $currentfont in $bodyfontvariation {
-  $i: index($bodyfontvariation, $currentfont);
-  .body-font-#{$i} {
-    font-size: $currentfont;
-    line-height: nth($lineheightvariation, $i);
-  }
-}
+// @each $currentfont in $bodyfontvariation {
+//   $i: index($bodyfontvariation, $currentfont);
+//   .body-font-#{$i} {
+//     font-size: $currentfont;
+//     line-height: nth($lineheightvariation, $i);
+//   }
+// }

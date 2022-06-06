@@ -1,0 +1,28 @@
+.nexto-counter-wrap {
+  display: flex;
+  max-width: 385px;
+  justify-content: space-between;
+  @include max(991px){
+    margin: 0 auto;
+  }
+}
+
+.nexto-counter-data{
+  h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    strong{
+      background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+  p{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+  }
+}

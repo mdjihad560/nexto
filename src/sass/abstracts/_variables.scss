@@ -1,5 +1,5 @@
 // fonts variable
-$heading-font: 'Inter', sans-serif !default;
+$heading-font: 'Space Grotesk', sans-serif !default;
 $body-font: 'Inter', sans-serif !default;
 
 // color variable
@@ -103,17 +103,11 @@ $bodyfontScale: (
   ),
 );
 
-$bodyfontvariation: 20px 18px 16px 14px 12px;
-$lineheightvariation: 32px 28px 24px 20px 12px;
-
-$headingfontSize: 72px 64px 48px 40px 36px 32px;
-$headingLineheight: 80px 72px 56px 48px 44px 40px;
-
 // button font size
 $button_font_size: 16px;
 $buton_line_height: 24px;
 $buton_border_radius: 10px;
-$button_padding: 15px 37px;
+$button_padding: 15.5px 36px;
 $button_font_weight: 700;
-$button_font_family: $heading-font;
+$button_font_family: $body-font;
 
