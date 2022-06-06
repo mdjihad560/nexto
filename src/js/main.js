@@ -64,6 +64,52 @@ var nexto_counter = $('#nexto-counter');
       });
 }
 
+/*--------------------------------------------------------------
+NEXTO SLIDER ONE
+--------------------------------------------------------------*/
+
+var nexto_slider_one = $('.nexto-slider-one');
+  if(nexto_slider_one.is_exist()){
+    nexto_slider_one.slick({
+      infinite: true,
+      center: true,
+      slidesToShow: 4, 
+      slidesToScroll: 1,
+      arrows: true,
+      autoplay: false,
+      dots: false,
+      prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+			nextArrow: '<button class="slide-arrow next-arrow"></button>',
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+          }
+        }
+    
+      ]
+    });
+  }
+
+
 
   
   

@@ -1,7 +1,84 @@
- 
- h3{
-     color: red;
-     @media (max-width: 1200px) {
-        color: black;
+// section title
+.nexto-section-title{
+    max-width: 656px;
+    text-align: center;
+    margin: 0 auto 75px;
+    @include max(991px) {
+        margin: 0 auto 55px;
     }
- }
+    h2{
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+// slider one section
+.nexto-slider-section{
+    background-color: var(--gray-800);
+    position: relative;
+    .nexto-shape1 {
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
+}
+
+.nexto-slider-one .slick-slide{
+    margin: 2px 12px;
+  }
+  .nexto-slider-one .prev-arrow, 
+  .nexto-slider-one .next-arrow {
+    left: -30px;
+    top: 50%;
+    z-index: 9;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    color: #201C2C;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-size: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--gray-10);
+    border: 5px solid #13111A;
+    transition: all 0.4s;
+    background-image: url(../images/svg/arrow-left.svg);
+    
+  }
+  .nexto-slider-one .next-arrow {
+    left: auto;
+    right: -30px;
+    background-image: url(../images/svg/arrow-right.svg);
+  }
+  
+
+  
+  
+  .slick-prev:before, .slick-next:before{
+    display: none;
+  }
+
+  .nexto-slider-one{
+    .slick-slide.slick-current.slick-active{
+        .nexto-btn:before {
+            opacity: 1;
+        }
+        .nexto-btn{
+            color: var(--gray-10);
+        }
+        .nexto-card-wrap{
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0);
+            &:before{
+                opacity: 1;
+            }
+        }
+  
+    }
+  }
+ 
