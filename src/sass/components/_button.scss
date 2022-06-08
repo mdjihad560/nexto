@@ -1,4 +1,40 @@
 // bootstrap button style
+.nexto-outline-btn{
+  padding: 2px;
+  border-radius: 10px;
+  display: inline-block;
+  color: var(--gray-10);
+  background: linear-gradient(to right, #FF00D4 , #7D41EA, #0080FF );
+  span{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 15.5px 38px;
+      border-radius: 10px;
+      background-color: var(--gray-800);
+      transition: all 0.4s;
+  }
+  &:hover span{
+    background-color: transparent;
+  }
+  &:hover{
+    color: var(--gray-10);
+  }
+  
+}
+
+.nexto-btn{
+  &.nexto-gradient-btn{
+    color: #fff;
+    padding: 10.5px 31px;
+    background-size: 200% auto!important;
+    background: linear-gradient(to right, #FF00D4 0%, #7D41EA 30.35%, #0080FF 100%);
+    &:hover{
+      background-position: right center;
+    }
+  }
+}
 
 .nexto-btn {
   font-size: $button_font_size;

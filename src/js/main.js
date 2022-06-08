@@ -67,7 +67,6 @@ var nexto_counter = $('#nexto-counter');
 /*--------------------------------------------------------------
 NEXTO SLIDER ONE
 --------------------------------------------------------------*/
-
 var nexto_slider_one = $('.nexto-slider-one');
   if(nexto_slider_one.is_exist()){
     nexto_slider_one.slick({
@@ -76,7 +75,7 @@ var nexto_slider_one = $('.nexto-slider-one');
       slidesToShow: 4, 
       slidesToScroll: 1,
       arrows: true,
-      autoplay: false,
+      autoplay: true,
       dots: false,
       prevArrow: '<button class="slide-arrow prev-arrow"></button>',
 			nextArrow: '<button class="slide-arrow next-arrow"></button>',
@@ -109,11 +108,37 @@ var nexto_slider_one = $('.nexto-slider-one');
     });
   }
 
+/*--------------------------------------------------------------
+NEXTO TEXT SLIDER
+--------------------------------------------------------------*/
+  var nexto_text_slider = $('.nexto-text-slider');
+  if(nexto_text_slider.is_exist()){
+    nexto_text_slider.slick({
+    infinite: true,
+    slidesToShow: 2, 
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    autoplay: true , 
+    autoplaySpeed: 0,
+    speed: 10000,
+    cssEase: 'linear',
+    pauseOnHover:true,
+    adaptiveHeight: true,
+    responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
 
+    ]
+  });
 
-  
-  
-  
+}
+
   });/*End document ready*/
   
   
@@ -131,9 +156,9 @@ var nexto_slider_one = $('.nexto-slider-one');
   /*--------------------------------------------------------------
   FOUR COLUMN FILTER JS INIT
   ------------------------------------------------------------*/
-  var comenci_filter3 = $('#comenci-four-column');
-  if(comenci_filter3.is_exist()){
-    var $container = $(comenci_filter3),
+  var nexto_filter = $('#nexto-four-column');
+  if(nexto_filter.is_exist()){
+    var $container = $(nexto_filter),
       colWidth = function () {
         var w = $container.width(), 
           columnNum = 1,
@@ -175,7 +200,7 @@ var nexto_slider_one = $('.nexto-slider-one');
       };
     isotope();
     $(window).resize(isotope);
-    var $optionSets = $('.comenci-portfolio-menu .option-set'),
+    var $optionSets = $('.nexto-portfolio-menu .option-set'),
         $optionLinks = $optionSets.find('li');
     $optionLinks.click(function(){
     var $this = $(this);

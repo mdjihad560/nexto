@@ -1,0 +1,74 @@
+.nexto-iconbox {
+  &-wrap{
+    z-index: 0;
+    padding: 0 15px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 24px;
+    @include max(1400px) {
+      padding: 0;
+    }
+    &:before{
+      content: " ";
+      right: -68px;
+      top: 106px;
+      width: 108px;
+      height: 2px;
+      z-index: -1;
+      position: absolute;
+      background-image: url("../images/all-img/line.png");
+    }
+  }
+  &-thumb{
+    margin-bottom: 30px;
+  }
+  &-data{
+    h4{
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-family: $body-font;
+      display: inline-block;
+      padding: 0 10px;
+      background-color: var(--gray-800);
+    }
+    p{
+      font-size: 18px;
+      line-height: 30px;
+      color: #FFFFFF;
+      opacity: 0.8;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+ 
+}
+
+.nexto-roadmap-section{
+  .col-xl-3.col-md-6{
+    &:nth-child(4){
+    .nexto-iconbox-wrap{
+        &:before{
+          content: none;
+        }
+      }
+    }
+    @include max(1199px) {
+      &:nth-child(2){
+        .nexto-iconbox-wrap{
+            &:before{
+              content: none;
+            }
+          }
+        }
+    }
+  }
+  @include max(767px) {
+    .nexto-iconbox-wrap{
+        &:before{
+          content: none;
+        }
+    }
+  }
+}

@@ -1,29 +1,15 @@
-// section title
-.nexto-section-title{
-    max-width: 656px;
-    text-align: center;
-    margin: 0 auto 75px;
-    @include max(991px) {
-        margin: 0 auto 55px;
-    }
-    h2{
-        margin-bottom: 15px;
-    }
-    p{
-        font-size: 18px;
-        line-height: 30px;
-    }
-}
 
 // slider one section
 .nexto-slider-section{
     background-color: var(--gray-800);
     position: relative;
-    .nexto-shape1 {
-        position: absolute;
-        top: 60px;
-        right: 0;
-    }
+    z-index: 0;
+}
+.nexto-shape1 {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: -1;
 }
 
 .nexto-slider-one .slick-slide{
@@ -56,10 +42,6 @@
     right: -30px;
     background-image: url(../images/svg/arrow-right.svg);
   }
-  
-
-  
-  
   .slick-prev:before, .slick-next:before{
     display: none;
   }
@@ -82,3 +64,183 @@
     }
   }
  
+
+//   protfolio section
+.nexto-portfolio-section{
+    position: relative;
+    z-index: 0;
+    .nexto-section-title{
+        margin: 0 auto 55px;
+    }
+}
+
+.nexto-shape2 {
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+}
+
+
+ul.nexto-gallery-menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    @include max(1199px) {
+        margin-bottom: 55px;
+        justify-content: space-between;
+    }
+    li{
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 16px;
+        position: relative;
+        border-radius: 10px;
+        padding: 2px;
+        margin: 0 10px;
+        cursor: pointer;
+        background: linear-gradient(to right, #FF00D4 , #7D41EA, #0080FF );
+        @include max(1199px) {
+            margin: 0 0 15px;
+            flex: 0 0 32.2%;
+        }
+        @include max(767px) {
+            flex: 0 0 48.5%;
+        }
+        @include max(420px) {
+            flex: 0 0 100%;
+        }
+        img{
+            margin-right: 10px;
+        }
+        span{
+            display: flex;
+            align-items: center;
+            height: 55px;
+            padding: 10px 20.5px;
+            border-radius: 10px;
+            width: 100%;
+            justify-content: center;
+            background-color: var(--gray-800);
+        }
+
+    }
+}
+
+.nexto-portfolio-section{
+    background-color: var(--gray-800);
+    .nexto-card-wrap{
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+}
+.nexto-portfolio-wrap {
+    margin-left: -24px;
+}
+.nexto-portfolio-btn {
+    text-align: center;
+    margin-top: 56px;
+}
+
+
+// text slider
+
+.nexto-text-slider-section {
+    padding: 22px 0;
+    background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+}
+.nexto-text-slider {
+    &-data{
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+        flex-direction: row-reverse;
+        @include max(600px) {
+            text-align: center;
+            display: block!important;
+        }
+        h3{
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+            line-height: 36px;
+
+            @include max(767px) {
+                font-size: 24px;
+            }
+        }
+    }
+    &-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        @include max(600px) {
+            margin-bottom: 10px;
+        }
+    }
+    
+  }
+
+// roadmap section
+.nexto-roadmap-section{
+    padding: 125px 0 106px;
+    background-color: var(--gray-800);
+    @include max(991px) {
+        padding: 100px 0 76px;
+    }
+    @include max(767px) {
+        padding: 80px 0 60px;
+    }
+}
+
+// newsletter section
+.nexto-newslatter-section{
+    z-index: 0;
+    position: relative;
+    background-color: var(--gray-800);
+}
+.nexto-shape4 {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nexto-newslatter-wrap {
+    border-radius: 10px;
+    padding: 100px;
+    text-align: center;
+    position: relative;
+    background: #201c2c;
+    @include max(991px) {
+        padding: 70px;
+    }
+    @include max(767px) {
+        padding: 50px;
+    }
+    @include max(400px) {
+        padding: 30px;
+    }
+    .nexto-section-title {
+        max-width: 585px;
+        margin: 0 auto 40px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -2px;
+        transition: all .4s;
+        border-radius: inherit;
+        background: linear-gradient(to right,#ff00d4,#7d41ea,#0080ff);
+    }
+}

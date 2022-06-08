@@ -14,9 +14,6 @@
     &:hover:before{
       opacity: 1;
     }
-    &:hover::after{
-      opacity: 0;
-    }
     &::before {
       content: "";
       position: absolute;
