@@ -14,3 +14,21 @@ header.nexto-header-section.sticky-menu{
   padding: 10px 0;
   background-color: var(--gray-800);
 }
+
+// header tow
+
+.nexto-header-two{
+  .site-menu-main .nav-link-item{
+    color: var(--gray-800);
+  }
+  &.site-header .mobile-menu-trigger span {
+    background-color: var(--gray-800);
+    &:before, &:after{
+      background-color: var(--gray-800);
+    }
+}
+}
+
+header.nexto-header-section.nexto-header-two.sticky-menu{
+  background-color: var(--gray-10);
+}

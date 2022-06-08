@@ -153,3 +153,138 @@ footer.nexto-footer-section{
     }
   }
 }
+
+// footer two
+footer.nexto-foote2-section {
+  background-size: cover;
+  background-position: center;
+  .nexto-footer-top{
+    padding: 120px 0;
+    border: none;
+    @include max(991px) {
+      padding: 80px 0;
+    }
+    @include max(767px) {
+      padding: 60px 0;
+    }
+  }
+  .nexto-default-content {
+    max-width: 590px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+  }
+  .nexto-hero-btn-wrap{
+    margin: 35px 0 0;
+  }
+}
+.nexto-star {
+  position: absolute;
+  top: -12px;
+  right: -40px;
+  @include max(767px) {
+    display: none;
+  }
+}
+.nexto-default-content{
+  h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--gray-800);
+    @include max(767px) {
+      font-size: 34px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  p{
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--gray-800);
+  }
+}
+
+.nexto-footer-middle{
+  padding-bottom: 35px;
+  border-bottom: 1px solid var(--gray-800);
+}
+.nexto-footer-menu2{
+  text-align: center;
+  ul{
+    li{
+      margin: 0 15px;
+      display: inline-block;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        font-weight: 600;
+        color: var(--gray-800);
+        transition: all 0.4s;
+        &:hover{
+          color: var(--danger-500);
+        }
+      }
+    }
+  }
+}
+.nexto-social-icon.nexto-social-icon2 {
+  text-align: right;
+  margin: 0;
+  @include max(991px) {
+    text-align: center;
+    margin-top: 15px;
+  }
+  ul{
+    li{
+      a{
+        &:hover{
+          background: var(--danger-500);
+        }
+        &:hover:before{
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+.nexto-footer-logo{
+  @include max(991px) {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.nexto-footer-bottom.nexto-footer-bottom2{
+  display: block;
+  @include max(991px) {
+    text-align: center;
+  }
+  p{
+    color: var(--gray-800);
+    margin: 0;
+  }
+  .nexto-footer-menu{
+    text-align: right;
+    @include max(991px) {
+      text-align: center;
+      margin-top: 15px;
+    }
+    ul{
+      li{
+        a{
+          color: var(--gray-800);
+        }
+        &::after{
+          opacity: 0.6;
+          background-color: var(--gray-800);
+        }
+      }
+    }
+  }
+}

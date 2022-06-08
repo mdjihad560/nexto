@@ -35,6 +35,21 @@
     }
   }
 }
+  .nexto-orange-btn{
+    padding: 10.5px 30px;
+    border-radius: 3px;
+    font-weight: 700;
+    z-index: 0;
+    position: relative;
+    color: var(--gray-800);
+    background-color: var(--danger-500);
+    &:hover{
+      color: var(--gray-10);
+      box-shadow: 5px 5px 0px 0px var(--gray-800);
+    }
+    
+  }
+
 
 .nexto-btn {
   font-size: $button_font_size;
@@ -44,7 +59,6 @@
   font-weight: $button_font_weight;
   transition: all 0.4s;
   font-family: $button_font_family;
-  overflow: hidden;
   width: fit-content;
   position: relative;
   z-index: 1;
@@ -70,6 +84,21 @@
   &.bg-white{
     color: var(--gray-800);
     background-color: var(--gray-10);
+  }
+  &.bg-orange{
+    border-radius: 3px;
+    color: var(--gray-800);
+    background-color: var(--danger-500);
+    &:hover{
+      color: var(--gray-10);
+      box-shadow: 5px 5px 0px 0px var(--gray-800);
+    }
+    &:before{
+      content: none;
+    }
+    &:hover:before{
+      transform: translate(5px, 5px)
+    }
   }
   &.disabled,
   &:disabled {

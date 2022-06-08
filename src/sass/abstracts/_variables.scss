@@ -1,6 +1,8 @@
 // fonts variable
 $heading-font: 'Space Grotesk', sans-serif !default;
 $body-font: 'Inter', sans-serif !default;
+$another-font: 'Public Sans', sans-serif !default;
+
 
 // color variable
 
@@ -66,18 +68,18 @@ $colors: (
   //   100: #ffeacc,
   //   50: #fff4e6,
   // ),
-  // danger: (
-  //   900: #2e0e0e,
-  //   800: #5d1c1c,
-  //   700: #8b2a2a,
-  //   600: #ba3838,
-  //   500: #e84646,
-  //   400: #ed6b6b,
-  //   300: #f19090,
-  //   200: #f6b5b5,
-  //   100: #fadada,
-  //   50: #fdeded,
-  // ),
+  danger: (
+    // 900: #2e0e0e,
+    // 800: #5d1c1c,
+    // 700: #8b2a2a,
+    // 600: #ba3838,
+    500: #FF6B55,
+    // 400: #ed6b6b,
+    // 300: #f19090,
+    // 200: #f6b5b5,
+    // 100: #fadada,
+    // 50: #fdeded,
+  ),
 );
 
 $bodyfontScale: (
