@@ -55,11 +55,17 @@
 }
 
 // home 2
-
+.nexto-hero-section2{
+  padding: 230px 0 235px;
+  @include max(1199px) {
+    padding: 180px 0 150px;
+  }
+}
 .nexto-hero-content2{
   max-width: 760px;
   text-align: center;
   margin: 0 auto;
+  position: relative;
   h1{
     color: var(--gray-800);
     font-family: $another-font;
@@ -67,5 +73,83 @@
   p{
     margin-right: 0;
     color: var(--gray-800);
+    margin: 0 20px;
   }
+  .nexto-content-star {
+    position: absolute;
+    top: 115px;
+    right: -15px;
+  }
+}
+
+.nexto-hero-mocup{
+  position: absolute;
+  @include max(991px) {
+    display: none;
+  }
+  &.mocup1{
+    top: 15%;
+    width: 22.5%;
+    left: -35%;
+    @include max(1400px) {
+      top: 15%;
+      width: 17.5%;
+      left: -20%;
+    }
+    @include max(1199px) {
+      top: 15%;
+      width: 15%;
+      left: -13%;
+    }
+  }
+  &.mocup2{
+    bottom: -30%;
+    width: 26.4%;
+    left: -12%;
+    @include max(1400px) {
+      bottom: -15%;
+      width: 20%;
+      left: -10%;
+    }
+    @include max(1199px) {
+      width: 15%;
+    }
+  }
+  &.mocup3{
+    top: -3%;
+    width: 23.7%;
+    right: -37%;
+    @include max(1400px) {
+      top: 0%;
+      width: 17.7%;
+      right: -24%;
+    }
+    @include max(1199px) {
+      width: 15%;
+      right: -13%;
+    }
+  }
+  &.mocup4{
+    bottom: -30%;
+    width: 26.4%;
+    right: -10%;
+    @include max(1400px) {
+      bottom: -15%;
+      width: 20%;
+      right: -10%;
+    }
+    @include max(1199px) {
+      width: 15%;
+      right: -5%;
+    }
+  }
+}
+
+// home 3
+
+.nexto-hero-section3{
+  padding: 200px 0 100px;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--gray-800);
 }

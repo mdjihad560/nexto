@@ -30,3 +30,24 @@
     margin: 0;
   }
 }
+
+// counter 2
+.nexto-counter-wrap2{
+  @include max(991px) {
+    margin: 30px 0 0;
+  }
+  .nexto-counter-data{
+    h2{
+      margin: 0 0 10px;
+      strong{
+        background: none;
+        color: var(--gray-800);
+        -webkit-text-fill-color: var(--gray-800);
+      }
+    }
+    p{
+      font-weight: 600;
+      opacity: 1!important;
+    }
+  }
+}

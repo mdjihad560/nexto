@@ -24,32 +24,20 @@
   
 }
 
-.nexto-btn{
-  &.nexto-gradient-btn{
-    color: #fff;
-    padding: 10.5px 31px;
-    background-size: 200% auto!important;
-    background: linear-gradient(to right, #FF00D4 0%, #7D41EA 30.35%, #0080FF 100%);
-    &:hover{
-      background-position: right center;
-    }
+.nexto-orange-btn{
+  padding: 10.5px 30px;
+  border-radius: 3px;
+  font-weight: 700;
+  z-index: 0;
+  position: relative;
+  color: var(--gray-800);
+  background-color: var(--danger-500);
+  &:hover{
+    color: var(--gray-10);
+    box-shadow: 5px 5px 0px 0px var(--gray-800);
   }
+  
 }
-  .nexto-orange-btn{
-    padding: 10.5px 30px;
-    border-radius: 3px;
-    font-weight: 700;
-    z-index: 0;
-    position: relative;
-    color: var(--gray-800);
-    background-color: var(--danger-500);
-    &:hover{
-      color: var(--gray-10);
-      box-shadow: 5px 5px 0px 0px var(--gray-800);
-    }
-    
-  }
-
 
 .nexto-btn {
   font-size: $button_font_size;
@@ -67,6 +55,36 @@
   display: inline-block;
   min-width: 180px;
   text-align: center;
+  &.nexto-menu-btn1{
+    color: #fff;
+    padding: 10.5px 31px;
+    background-size: 200% auto!important;
+    background: linear-gradient(to right, #FF00D4 0%, #7D41EA 30.35%, #0080FF 100%);
+    &:hover{
+      background-position: right center;
+    }
+  }
+  &.nexto-menu-btn2, 
+  &.nexto-menu-btn3{
+    padding: 10.5px 30px;
+    border-radius: 3px;
+    font-weight: 700;
+    z-index: 0;
+    color: var(--gray-800);
+    background-color: var(--danger-500);
+    &:before{
+      content: none;
+    }
+    &:hover{
+      color: var(--gray-10);
+      box-shadow: 5px 5px 0px 0px var(--gray-800);
+    }
+    
+  }
+  &.nexto-menu-btn3{
+    color: var(--gray-10);
+    background-color: var(--primary-500);
+  }
   
   // &.icon-btn {
   //   padding: 0;

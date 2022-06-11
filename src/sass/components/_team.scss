@@ -1,6 +1,6 @@
 //   team section
 .nexto-team-section{
-  padding: 125px 0 106px;
+  padding: 115px 0 94px;
   position: relative;
   z-index: 0; 
   background-color: var(--gray-800);
@@ -9,7 +9,7 @@
       padding: 100px 0 76px;
   }
   @include max(767px) {
-      padding: 80px 0 52px;
+      padding: 80px 0 56px;
   }
   
 }
@@ -17,6 +17,7 @@
 .nexto-shape3{
   top: 0;
   right: 0;
+  z-index: -1;
   position: absolute;
 }
 
@@ -62,4 +63,45 @@
     }
   }
   
+}
+
+// team home 2
+
+.nexto-team-v2{
+  background: var(--gray-10);
+  .nexto-team {
+    &-wrap{
+      display: block;
+      text-align: center;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+    }
+    &-thumb{
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      margin-bottom: 20px;
+    }
+    &-data{
+      h4{
+        line-height: 1;
+        color: var(--gray-800);
+      }
+      p{
+        font-size: 18px;
+        opacity: 0.8;
+        color: var(--gray-800);
+        margin: 0 0 20px;
+      }
+    }
+  }
+  .nexto-social-icon.nexto-social-icon2{
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    text-align: center;
+  }
 }

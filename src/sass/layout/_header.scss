@@ -32,3 +32,10 @@ header.nexto-header-section.sticky-menu{
 header.nexto-header-section.nexto-header-two.sticky-menu{
   background-color: var(--gray-10);
 }
+
+// header 3
+.nexto-header-three{
+  .site-navbar .menu-block-wrapper {
+    justify-content: center;
+  }
+}

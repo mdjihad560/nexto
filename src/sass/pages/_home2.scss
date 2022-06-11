@@ -7,3 +7,97 @@
     }
   }
 }
+
+// about section
+
+.nexto-about-section{
+  .nexto-hero-btn-wrap{
+    margin: 35px 0 0; 
+  }
+  .nexto-default-content{
+    padding-left: 50px;
+    padding-right: 80px;
+    @include max(1400px) {
+      padding-right: 0;
+    }
+    @include max(991px) {
+      padding: 0;
+    }
+  }
+}
+.nexto-about-thumb{
+  @include max(991px) {
+    margin-bottom: 35px;
+  }
+}
+
+// default section
+.nexto-artwork-section {
+  background-size: cover;
+  background-position: center;
+}
+.nexto-artwork {
+  &-right{
+    text-align: right;
+    @include max(991px) {
+      text-align: center;
+    }
+  }
+  &-thumb{
+    display: inline-block;
+    position: relative;
+    transform: rotate(3deg);
+    @include max(991px) {
+      transform: rotate(0deg);
+      margin-top: 30px;
+    }
+  }
+  &-data{
+    position: absolute;
+    left: -105px;
+    bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 14px;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include max(575px) {
+      width: 150px;
+      height: 150px;
+      left: 0;
+      bottom: 0;
+    }
+    p{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #13111A;
+      transform: rotate(-10deg);
+      @include max(575px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  
+}
+
+// collection section
+.nexto-collection-section{
+  background-color: var(--warning-500);
+}
+
+// roadmap section
+
+.nexto-roadmap-v2{
+  background: linear-gradient(180deg, #EEE6D0 -29.02%, rgba(255, 255, 255, 0) 160.21%);
+  .nexto-section-title {
+    max-width: 485px;
+    text-align: left;
+    margin: 0 0 75px;
+}
+
+}

@@ -108,6 +108,52 @@ var nexto_slider_one = $('.nexto-slider-one');
     });
   }
 
+  /*--------------------------------------------------------------
+NEXTO SLIDER ONE
+--------------------------------------------------------------*/
+var nexto_slider_two = $('.nexto-slider-two');
+if( nexto_slider_two.is_exist()){
+    nexto_slider_two.slick({
+    infinite: true,
+    slidesToShow: 5, 
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    autoplay: true , 
+    autoplaySpeed: 0,
+    speed: 10000,
+    cssEase: 'linear',
+    pauseOnHover:true,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+  
+    ]
+  });
+}
+
 /*--------------------------------------------------------------
 NEXTO TEXT SLIDER
 --------------------------------------------------------------*/

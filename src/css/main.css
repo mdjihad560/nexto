@@ -34,11 +34,13 @@
   align-items: center;
 }
 
+
 @media (min-width: 992px) {
   .site-navbar .menu-block-wrapper {
     display: flex !important;
     flex-basis: auto;
   }
+  
 }
 
 .site-header--absolute {

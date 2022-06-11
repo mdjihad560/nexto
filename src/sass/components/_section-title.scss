@@ -1,6 +1,6 @@
 // section padding
 .nexto-section-padding{
-  padding: 125px 0 128px;
+  padding: 115px 0 120px;
   @include max(991px){
     padding: 100px 0;
   }
@@ -15,13 +15,6 @@
   margin: 0 auto 75px;
   @include max(991px) {
       margin: 0 auto 55px;
-  }
-  h2{
-      margin-bottom: 15px;
-  }
-  p{
-      font-size: 18px;
-      line-height: 30px;
   }
 }
 
@@ -49,6 +42,40 @@
       p{
         margin: 0;
       }
+    }
+  }
+}
+
+.nexto-default-content{
+  &.content-sm{
+    h2{
+      font-size: 42px;
+      line-height: 48px;
+      @include max(991px) { 
+        font-size: 40px;
+      }
+      @include max(767px) { 
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+  p{
+      font-size: 18px;
+      line-height: 30px;
+      @include max(767px) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+  }
+  &.content-black{
+    h2{
+      color: var(--gray-800);
+      font-family: $another-font;
+    }
+    p{
+      opacity: 0.8;
+      color: var(--gray-800);
     }
   }
 }

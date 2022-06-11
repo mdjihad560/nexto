@@ -90,6 +90,81 @@
   }
 }
 
+// card two
+  .nexto-card{
+    &-wrap{
+      &.nexto-card2{
+        background: var(--gray-10);
+        border: 3px solid var(--gray-800);
+        border-radius: 3px;
+        padding: 18px;
+        &:before{
+          content: none;
+        }
+        .nexto-card-thumb{
+          img{
+            border-radius: 3px;
+          }
+        }
+        .nexto-card-data {
+          h3{
+            color: var(--gray-800);
+          }
+          p{
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 20px;
+            opacity: 1;
+            color: var(--gray-800);
+            img{
+              margin-right: 8px;
+            }
+          }
+        }
+        .nexto-card-footer{
+          &-data{
+            h4{
+              font-weight: 400;
+              font-size: 18px;
+              color: var(--gray-800);
+              opacity: 0.8;
+            }
+          }
+          .nexto-btn{
+            border-radius: 5px;
+            min-width: 100px;
+            display: flex;
+            font-size: 16px;
+            color: var(--gray-10);
+            background-color: var(--gray-800);
+            img{
+              margin-right: 7px;
+            }
+            &:before{
+              content: none;
+            }
+            &.nexto-gray{
+              color: rgba(19, 17, 26, 0.4)!important;
+              background-color: rgba(19, 17, 26, 0.1);
+              img{
+                opacity: .3;
+              }
+            }
+          }
+        }
+       
+      }
+        
+    }
+  }
+.nexto-slider-two{
+   .slick-slide{
+    margin: 0 12px;
+  }
+}
+
+
 
 
 

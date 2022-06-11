@@ -186,28 +186,17 @@ footer.nexto-foote2-section {
     display: none;
   }
 }
-.nexto-default-content{
-  h2{
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 60px;
-    color: var(--gray-800);
-    @include max(767px) {
-      font-size: 34px;
-      line-height: 40px;
-      margin-bottom: 20px;
-    }
-  }
-  p{
-    font-size: 18px;
-    line-height: 30px;
-    color: var(--gray-800);
-  }
-}
+
 
 .nexto-footer-middle{
   padding-bottom: 35px;
   border-bottom: 1px solid var(--gray-800);
+  .nexto-footer-logo{
+    @include max(991px) {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
 }
 .nexto-footer-menu2{
   text-align: center;
@@ -253,12 +242,7 @@ footer.nexto-foote2-section {
   }
 }
 
-.nexto-footer-logo{
-  @include max(991px) {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-}
+
 
 .nexto-footer-bottom.nexto-footer-bottom2{
   display: block;
