@@ -141,22 +141,34 @@
             border-radius: 5px;
             min-width: 100px;
             display: flex;
+            align-items: center;
             font-size: 16px;
-            color: var(--gray-10);
-            background-color: var(--gray-800);
+            color: rgba(19, 17, 26, 0.4)!important;
+            background-color: rgba(19, 17, 26, 0.1);
             img{
+              opacity: .3;
               margin-right: 7px;
             }
             &:before{
               content: none;
             }
-            &.nexto-gray{
-              color: rgba(19, 17, 26, 0.4)!important;
-              background-color: rgba(19, 17, 26, 0.1);
+            .red-heart{
+              display: none;
+            }
+            &.dark-btn{
+              color: var(--gray-10)!important;
+              background-color: var(--gray-800);
               img{
-                opacity: .3;
+                opacity: 1;
+              }
+              .red-heart{
+                display: block;
+              }
+              .black-heart{
+                display: none;
               }
             }
+          
           }
         }
        

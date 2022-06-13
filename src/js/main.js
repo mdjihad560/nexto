@@ -119,7 +119,7 @@ if( nexto_slider_two.is_exist()){
     slidesToScroll: 1,
     arrows: false,
     dots: false,
-    autoplay: true , 
+    autoplay: true, 
     autoplaySpeed: 0,
     speed: 10000,
     cssEase: 'linear',
@@ -239,6 +239,16 @@ var popup_youtube = $('.nexto-popup');
   });
 
 }
+
+// card like js
+const nextoBtnTigger = document.querySelectorAll('.nexto-tigger');
+
+nextoBtnTigger.forEach(linkbtn => {
+  linkbtn.addEventListener('click', () => {
+    linkbtn.classList.toggle("dark-btn");
+  });
+})
+
 
   });/*End document ready*/
   

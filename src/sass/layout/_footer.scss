@@ -182,6 +182,8 @@ footer.nexto-foote2-section {
   position: absolute;
   top: -12px;
   right: -40px;
+  -webkit-animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
   @include max(767px) {
     display: none;
   }
