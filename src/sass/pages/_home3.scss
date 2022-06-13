@@ -1,0 +1,96 @@
+// client section
+.nexto-client-section{
+  padding: 80px 0;
+  background-color: var(--gray-800);
+}
+.nexto-client-title{
+  margin-bottom: 50px;
+  text-align: center;
+  p{
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+// nexto-feature-section
+.nexto-feature-section{
+  padding: 115px 0 96px;
+  background-color: var(--gray-800);
+}
+// content section
+.nexto-content-section {
+  background-size: cover;
+  background-position: center center;
+  
+}
+.nexto-content-top{
+  .nexto-default-content {
+    margin-right: 51px;
+    @include max(1400px) {
+      margin-right: 0;
+    }
+  }
+  .nexto-content-thumb{
+    width: 100%;
+    text-align: right;
+    @include max(1199px) {
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+}
+.nexto-content-bottom {
+  padding: 30px 0 120px;
+  @include max(991px) {
+    padding: 0 0 100px;
+  }
+  @include max(767px) {
+    padding: 0 0 80px;
+  }
+  .nexto-content-thumb{
+    @include max(1199px) {
+      text-align: center;
+      margin-top: 40px;
+      width: 100%;
+    }
+  }
+  .nexto-default-content {
+    padding: 0 20px;
+    @include max(1199px) {
+      padding: 0;
+    }
+}
+}
+
+.nexto-meta{
+  margin-top: 35px;
+  ul{
+    li{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+      position: relative;
+      padding-left: 33px;
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      img{
+        position: absolute;
+        left: 0;
+        top: 5px;
+      }
+    }
+  }
+}
+
+// testimonial section
+.nexto-testimonial-section{
+  background-color: var(--gray-800);
+}
+
+// faq section
+.nexto-faq-section2.nexto-section-padding {
+  background-size: cover;
+}

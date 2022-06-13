@@ -10,11 +10,19 @@
 }
 // section title
 .nexto-section-title{
-  max-width: 690px;
+  max-width: 708px;
   text-align: center;
   margin: 0 auto 75px;
   @include max(991px) {
       margin: 0 auto 55px;
+  }
+  .nexto-default-content{
+    p{
+      padding: 0 20px;
+      @include max(767px) {
+       padding: 0;
+    }
+    }
   }
 }
 

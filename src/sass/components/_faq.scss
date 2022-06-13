@@ -8,8 +8,9 @@
 .nexto-accordion-one{
   .accordion-item {
     border: none;
+    background-color: transparent;
     border-bottom: 2px solid var(--gray-800);
-}
+  }
   .accordion-button{
     padding: 30px 0;
     font-weight: 600;
@@ -17,7 +18,7 @@
     line-height: 1;
     font-family: $body-font;
     color: var(--gray-800);
-    background-color: var(--warning-500);;
+    background-color: transparent;
     @include max(767px) {
       font-size: 20px;
       line-height: 30px;
@@ -31,17 +32,70 @@
       background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.0001 0.600098C9.66284 0.600098 10.2001 1.13736 10.2001 1.8001V7.8001H16.2001C16.8628 7.8001 17.4001 8.33736 17.4001 9.0001C17.4001 9.66284 16.8628 10.2001 16.2001 10.2001H10.2001V16.2001C10.2001 16.8628 9.66284 17.4001 9.0001 17.4001C8.33736 17.4001 7.8001 16.8628 7.8001 16.2001V10.2001H1.8001C1.13736 10.2001 0.600098 9.66284 0.600098 9.0001C0.600098 8.33735 1.13736 7.8001 1.8001 7.8001L7.8001 7.8001V1.8001C7.8001 1.13736 8.33736 0.600098 9.0001 0.600098Z' fill='%23111827'/%3E%3C/svg%3E%0A");
     }
     &:not(.collapsed)::after {
-      transform: rotate(-45deg);
-  }
+        transform: rotate(-45deg);
+    }
   }
   .accordion-body {
     font-size: 18px;
     line-height: 30px;
     color: rgba(19, 17, 26, 0.8);
-    background-color: var(--warning-500);;
     padding: 0 220px 25px 0;
     @include max(1199px) {
       padding: 0 0 25px;
     }
+  }
+  &.accordion-two{
+    .accordion-item{
+      background-color: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .accordion-button{
+      color: white;
+      font-size: 20px;
+      padding: 20px 50px;
+      &:after{
+        left: 0;
+        top: 27px;
+        background-size: 20px;
+        position: absolute;
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L10 10L18 2' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      }
+      &:not(.collapsed)::after {
+        top: 17px;
+        transform: rotate(-180deg);
+      }
+    }
+    .accordion-body {
+      padding: 0 130px 22px 52px;
+      color: rgba(255, 255, 255, 0.8);
+      @include max(767px) {
+        padding: 0 20px 20px 52px;
+      }
+    }
+  }
+  &.accordion-three{
+    .accordion-item{
+      border: 0.5px solid #FFFFFF;
+      border-bottom: none;
+      &:last-child{
+        border-bottom: 0.5px solid #FFFFFF;
+      }
+    }
+    .accordion-button{
+      font-size: 20px;
+      line-height: 28px;
+      padding: 30px;
+      color: var(--gray-10);
+      &:after{
+        background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.0625 6.5625H8.4375V0.9375C8.4375 0.68886 8.33873 0.450403 8.16291 0.274588C7.9871 0.0987722 7.74864 0 7.5 0C7.25136 0 7.0129 0.0987722 6.83709 0.274588C6.66127 0.450403 6.5625 0.68886 6.5625 0.9375V6.5625H0.9375C0.68886 6.5625 0.450403 6.66127 0.274588 6.83709C0.0987722 7.0129 0 7.25136 0 7.5C0 7.74864 0.0987722 7.9871 0.274588 8.16291C0.450403 8.33873 0.68886 8.4375 0.9375 8.4375H6.5625V14.0625C6.5625 14.3111 6.66127 14.5496 6.83709 14.7254C7.0129 14.9012 7.25136 15 7.5 15C7.74864 15 7.9871 14.9012 8.16291 14.7254C8.33873 14.5496 8.4375 14.3111 8.4375 14.0625V8.4375H14.0625C14.3111 8.4375 14.5496 8.33873 14.7254 8.16291C14.9012 7.9871 15 7.74864 15 7.5C15 7.25136 14.9012 7.0129 14.7254 6.83709C14.5496 6.66127 14.3111 6.5625 14.0625 6.5625Z' fill='white'/%3E%3C/svg%3E%0A");
+      }
+    }
+    .accordion-body{
+      color: var(--gray-10);
+      opacity: 0.8;
+      padding: 30px;
+      padding-top: 0;
+    }
+  }
 }
-}
+

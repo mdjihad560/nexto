@@ -108,3 +108,47 @@
     }
   }
 }
+
+// iconbox v3
+.nexto-iconbox-wrap3{
+    padding: 40px;
+    border-radius: 3px;
+    background: linear-gradient(118.28deg, #17181A -8.97%, #636675 141.84%);
+    @include max(991px) {
+      padding: 30px;
+    }
+    &:before {
+      content: none;
+    }
+    &:hover .nexto-iconbox-thumb{
+      background-color: var(--gray-10);
+    }
+    &:hover .nexto-iconbox-thumb{
+      path{
+        fill: var(--primary-500);
+      }
+      
+    }
+    .nexto-iconbox{
+      &-thumb{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        border-radius: 100%;
+        margin: 0 auto 30px;
+        justify-content: center;
+        transition: all 0.4s;
+        background-color: var(--primary-500);
+        path{
+          transition: all 0.4s;
+        }
+      }
+      &-data{
+        h4{
+          padding: 0;
+          background-color: transparent;
+        }
+      }
+    }
+}

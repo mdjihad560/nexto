@@ -185,6 +185,61 @@ NEXTO TEXT SLIDER
 
 }
 
+/*--------------------------------------------------------------
+NEXTO TEXT SLIDER
+--------------------------------------------------------------*/
+var nexto_client_slider = $('.nexto-client-slider');
+if(nexto_client_slider.is_exist()){
+  nexto_client_slider.slick({
+  infinite: true,
+  slidesToShow: 5, 
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  autoplay: true , 
+  autoplaySpeed: 0,
+  speed: 10000,
+  cssEase: 'linear',
+  pauseOnHover:true,
+  adaptiveHeight: true,
+  responsive: [
+  {
+    breakpoint: 1199,
+    settings: {
+      slidesToShow: 4,
+    }
+  },
+  {
+    breakpoint: 991,
+    settings: {
+      slidesToShow: 3,
+    }
+  },
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 2,
+    }
+  },
+
+  ]
+});
+
+}
+
+
+/*--------------------------------------------------------------
+YOUTUBE MAGNIFIC POPUP JS INIT
+------------------------------------------------------------*/
+var popup_youtube = $('.nexto-popup');
+  if (popup_youtube.is_exist()){
+      popup_youtube.magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-fade'
+  });
+
+}
+
   });/*End document ready*/
   
   

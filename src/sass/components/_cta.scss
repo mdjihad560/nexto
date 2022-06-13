@@ -1,0 +1,28 @@
+.nexto-cta-section {
+  background-size: cover;
+  padding: 50px 0 120px;
+  @include max(991px) {
+    padding: 0px 0 100px;
+  }
+  @include max(767px) {
+    padding: 0px 0 80px;
+  }
+}
+
+.nexto-cta-wrap{
+  border-radius: 10px;
+  padding: 80px 110px;
+  background-color: var(--primary-500);
+  @include max(1400px) {
+    padding: 80px;
+  }
+  @include max(991px) {
+    text-align: center;
+  }
+  @include max(767px) {
+    padding: 50px;
+  }
+  @include max(575px) {
+    padding: 35px;
+  }
+}
