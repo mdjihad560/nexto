@@ -1,9 +1,9 @@
 .nexto-breadcrumb-section.dark-version {
   background-size: cover;
-  padding: 200px 0 0;
+  padding: 200px 0 10px;
   background-color: var(--gray-800);
   @include max(575px) {
-    padding: 150px 0 0;
+    padding: 150px 0 10px;
   }
 }
 
