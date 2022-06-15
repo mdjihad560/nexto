@@ -1,0 +1,116 @@
+.nexto-blog-top-section{
+  z-index: 1;
+  position: relative;
+  background-color: var(--gray-800);
+}
+.nexto-blog-top-wrap {
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  @include max(767px) {
+    padding-bottom: 80px;
+  }
+  .nexto-blog-wrap{
+    position: relative;
+    background: transparent;
+    backdrop-filter: inherit;
+    &:hover .nexto-blog-thumb img{
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  .nexto-blog-thumb {
+    height: 550px;
+    overflow: inherit;
+    position: relative;
+    margin-left: 34%;
+    @include max(991px) {
+      margin: 0;
+      height: auto;
+    }
+}
+  .nexto-blog-content {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    background: rgba(90, 75, 124, 0.2);
+    backdrop-filter: blur(400px);
+    border-radius: 10px;
+    transform: translateY(-50%);
+    border: 1px solid #fff;
+    width: 642px;
+    @include max(991px) {
+      position: inherit;
+      transform: inherit;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+    }
+  }
+}
+.nexto-blog-shape3 {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  z-index: -1;
+}
+
+// blog filter section2
+.nexto-blog-section{
+  background-color: var(--gray-800);
+  .nexto-blog-wrap{
+    margin-bottom: 24px;
+    margin-left: 24px;
+  }
+  .nexto-portfolio-wrap {
+      margin-left: -24px;
+  }
+  .nexto-portfolio-menu{
+    margin-bottom: 0;
+    @include max(1199px) {
+      margin-top: 30px;
+      ul{
+        li{
+          flex: 0 0 19%;
+        }
+      }
+    }
+    @include max(991px) {
+      ul{
+        li{
+          flex: 0 0 23%;
+        }
+      }
+    }
+    @include max(767px) {
+      ul{
+        li{
+          flex: 0 0 48.5%;
+        }
+      }
+    }
+    @include max(420px) {
+      ul{
+        li{
+          flex: 0 0 100%;
+        }
+      }
+    }
+    
+  }
+  .nexto-section-title-wrap{
+    align-items: center;
+    @include max(1199px) {
+      margin-top: 40px;
+      display: block;
+    }
+  }
+  .nexto-default-content.content-sm {
+    h2{
+      margin: 0;
+    }
+  }
+}
+
+.nexto-portfolio-section .nexto-card-wrap {
+  margin-bottom: 24px;
+  margin-left: 24px;
+}

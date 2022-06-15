@@ -5,6 +5,7 @@
   margin-top: 50px;
   @include max(991px){
     margin: 0 auto;
+    margin-top: 40px;
   }
   @include max(410px){
     margin-top: 25px;

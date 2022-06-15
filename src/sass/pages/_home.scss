@@ -81,51 +81,62 @@
 }
 
 
-ul.nexto-gallery-menu{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-    flex-wrap: wrap;
-    @include max(1199px) {
-        margin-bottom: 55px;
-        justify-content: space-between;
-    }
-    li{
+.nexto-portfolio-menu{
+    margin-bottom: 55px;
+    ul{
         display: flex;
-        align-items: center;
-        font-weight: 700;
-        font-size: 16px;
-        position: relative;
-        border-radius: 10px;
-        padding: 2px;
-        margin: 0 10px;
-        cursor: pointer;
-        background: linear-gradient(to right, #FF00D4 , #7D41EA, #0080FF );
+        justify-content: center;
+        flex-wrap: wrap;
         @include max(1199px) {
-            margin: 0 0 15px;
-            flex: 0 0 32.2%;
+         justify-content: space-between;
         }
-        @include max(767px) {
-            flex: 0 0 48.5%;
-        }
-        @include max(420px) {
-            flex: 0 0 100%;
-        }
-        img{
-            margin-right: 10px;
-        }
-        span{
+        li{
             display: flex;
             align-items: center;
-            height: 55px;
-            padding: 10px 20.5px;
+            font-weight: 700;
+            font-size: 16px;
+            position: relative;
             border-radius: 10px;
-            width: 100%;
-            justify-content: center;
-            background-color: var(--gray-800);
+            padding: 2px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: all 0.4s;
+            background: linear-gradient(to right, #FF00D4 , #7D41EA, #0080FF );
+            &.active{
+                transition: all 0.4s;
+                background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+                span{
+                    transition: all 0.4s;
+                    background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+                }
+            }
+            @include max(1199px) {
+                margin: 0 0 15px;
+                flex: 0 0 32.2%;
+            }
+            @include max(767px) {
+                flex: 0 0 48.5%;
+            }
+            @include max(420px) {
+                flex: 0 0 100%;
+            }
+            img{
+                margin-right: 10px;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                height: 55px;
+                padding: 10px 20.5px;
+                border-radius: 10px;
+                width: 100%;
+                justify-content: center;
+                background-color: var(--gray-800);
+            }
+    
         }
-
     }
+    
 }
 
 .nexto-portfolio-section{
