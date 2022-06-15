@@ -1,3 +1,5 @@
+
+// about dark
 // about section
 .nexto-about-section2{
   z-index: 0;
@@ -23,4 +25,115 @@
   top: -20%;
   right: 0;
   z-index: -1;
+}
+
+.exeter-signal-loaded.exeter-signal {
+  margin-top: 0;
+}
+.exeter-signal{
+  margin-top: -200px;
+    transition: all 0.4s;
+}
+
+.test{
+  position: relative;
+}
+
+// nexto vision section
+.nexto-vision-section{
+  background-color: var(--gray-800);
+}
+
+// video section
+.nexto-video-section2{
+  background-color: var(--gray-800);
+  .nexto-default-content.content-sm h2{
+    padding: 0 30px;
+    @include max(540px) {
+      padding: 0;
+    }
+  }
+  .nexto-video-thumb{
+    margin: 0;
+  }
+}
+
+// faq section
+.nexto-faq-section {
+  &.nexto-about-page{
+    background-color: var(--gray-800);
+    .nexto-section-title {
+        margin: 0 auto 45px;
+        @include max(991px) {
+          margin: 0 auto 25px;
+        }
+    }
+  }
+}
+
+// about light 
+.nexto-feature2-section{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -51.59%, #EEE6D0 119.2%);
+}
+.nexto-feature{
+  &-wrap{
+    padding: 0 45px;
+    padding-bottom: 90px;
+    margin-bottom: 24px;
+    border-left: 1px solid rgba(19, 17, 26, 0.2);
+    @include max(1400px) {
+      padding: 0 30px;
+      padding-right: 0;
+      padding-bottom: 90px;
+    }
+    @include max(1199px) {
+      padding-bottom: 0;
+      padding-right: 0;
+    }
+    @include max(991px) {
+      padding: 0 25px;
+      padding-right: 0;
+    }
+  }
+  &-data{
+    h2{
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 1;
+      margin-bottom: 30px;
+      color: #FF6B55;
+      font-family: $another-font;
+    }
+    span{
+      display: block;
+      font-size: 30px;
+      line-height: 1;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      color: var(--gray-800);
+      @include max(575px) {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+    }
+    p{
+      font-size: 18px;
+      line-height: 30px;
+      color: #13111A;
+      opacity: 0.8;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+}
+
+.col-xl-4.col-md-6{
+  &:nth-child(2) .nexto-feature-wrap{
+    padding-top: 90px;
+    padding-bottom: 0;
+    @include max(1199px) {
+      padding-top: 0;
+    }
+  }
 }

@@ -29,19 +29,26 @@
 }
 
 .nexto-btn-wrap {
-  margin: 55px 0 0;
-  @include max(410px){
-    margin: 40px 0 0;
-  }
-  .nexto-btn{
-    margin-right: 20px;
-    &:last-child{
-      margin-right: 0;
-    }
+  &.nexto-hero-btn{
+    margin: 55px 0 0;
     @include max(410px){
-      margin: 0 0 15px;
+      margin: 40px 0 0;
+    }
+    .nexto-btn{
+      margin-right: 20px;
+      &:last-child{
+        margin-right: 0;
+      }
+      @include max(410px){
+        margin: 0 0 15px;
+      }
     }
   }
+ 
+}
+
+.nexto-btn-wrap{
+  margin: 35px 0 0;
 }
 
 .nexto-hero-thumb {

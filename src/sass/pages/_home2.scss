@@ -11,9 +11,6 @@
 // about section
 
 .nexto-about-section{
-  .nexto-btn-wrap{
-    margin: 35px 0 0; 
-  }
   .nexto-default-content{
     padding-left: 50px;
     padding-right: 80px;
@@ -41,6 +38,12 @@
     text-align: right;
     @include max(991px) {
       text-align: center;
+    }
+    &.left{
+      text-align: left;
+      @include max(991px) {
+        text-align: center;
+      }
     }
   }
   &-thumb{

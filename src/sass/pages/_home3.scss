@@ -15,14 +15,7 @@
 
 // nexto-feature-section
 .nexto-feature-section{
-  padding: 115px 0 96px;
   background-color: var(--gray-800);
-  @include max(991px) {
-    padding: 100px 0 76px;
-  }
-  @include max(767px) {
-    padding: 80px 0 56px;
-  }
 }
 // content section
 .nexto-content-section {

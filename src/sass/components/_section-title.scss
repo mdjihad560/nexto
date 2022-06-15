@@ -8,6 +8,15 @@
     padding: 80px 0;
   }
 }
+.nexto-section-padding2{
+  padding: 115px 0 96px;
+  @include max(991px) {
+    padding: 100px 0 76px;
+  }
+  @include max(767px) {
+    padding: 80px 0 56px;
+  }
+}
 // section title
 .nexto-section-title{
   max-width: 708px;

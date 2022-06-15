@@ -11,9 +11,9 @@
     "gulp",
     "starter"
   ],
-  "author": "Zakirsoft (info@zakirsoft.com)",
+  "author": "mthemeus (mthemeus.com)",
   "license": "ISC",
-  "homepage": "https://zakirsoft",
+  "homepage": "mthemeus",
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",

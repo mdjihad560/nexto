@@ -28,6 +28,10 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      @include max(767px) {
+        width: 60px;
+        height: 60px;
+      }
   }
 }
 
@@ -44,6 +48,10 @@
   -webkit-animation: waves 3s ease-in-out infinite;
   animation: waves 3s ease-in-out infinite;
   z-index: -1;
+  @include max(767px) {
+    width: 130px;
+    height: 130px;
+  }
   &.wave-1 {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
@@ -78,4 +86,80 @@
       opacity: 0;
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   }
+}
+
+// video section about pages
+
+
+.nexto-video {
+  &-wrap{
+    position: relative;
+      a.nexto-popup {
+        position: absolute;
+        top: 43%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        -webkit-animation: rotate-animation 10s infinite linear;
+        -moz-animation: rotate-animation 10s infinite linear;
+        -o-animation: rotate-animation 10s infinite linear;
+        animation: rotate-animation 10s infinite linear;
+        &:hover{
+          -webkit-animation-play-state:paused;
+          -moz-animation-play-state:paused;
+          -o-animation-play-state:paused;
+          animation-play-state:paused;
+        }
+        @include max(1199px) {
+          width: 120px;
+          height: 120px;
+        }
+        @include max(991px) {
+          width: 100px;
+          height: 100px;
+        }
+        @include max(767px) {
+          width: 75px;
+          height: 75px;
+          left: 50%;
+        }
+        @include max(479px) {
+          width: 55px;
+          height: 55px;
+          top: 40%;
+        }
+    }
+  }
+  &-column{
+    display: flex;
+    .nexto-video-thumb{
+      margin-right: 30px;
+      @include max(1199px) {
+        margin: 0;
+        margin-right: 20px;
+      }
+      &:last-child{
+        margin-right: 0;
+        padding-top: 115px;
+        @include max(991px) {
+          padding-top: 80px;
+        }
+        @include max(767px) {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

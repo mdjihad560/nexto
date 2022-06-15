@@ -120,6 +120,13 @@
       box-shadow: 5px 5px 0px 0px var(--gray-10);
     }
   }
+  &.bg-gradient{
+    color: var(--gray-10);
+    background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%)!important;
+    &:before{
+      content: none;
+    }
+  }
   &.disabled,
   &:disabled {
     opacity: 1;
