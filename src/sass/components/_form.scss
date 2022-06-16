@@ -20,6 +20,21 @@ input, textarea {
   max-width: 430px;
   position: relative;
   margin: 0 auto;
+  input{
+    padding: 10px 150px 10px 25px!important;
+  }
+  &.nexto-search{
+    input{
+      padding: 10px 150px 10px 50px!important;
+    }
+  }
+}
+button#nexto-search-btn {
+  position: absolute;
+  top: 16px;
+  z-index: 9;
+  left: 20px;
+  opacity: .5;
 }
 #nexto-submit-btn{
   font-weight: 700;

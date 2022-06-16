@@ -1,1 +1,296 @@
-blog light
+blog light{% extends "layout/layout.html" %} {% block content %}
+
+{% include "../templates/layout/header-footer/header-two.html" %} 
+
+<div class="nexto-blog-section blog-light-version">
+  <div class="container">
+    <div class="nexto-breadcrumbs-section">
+      <div class="nexto-breadcrumbs-data center-content">
+        <h1>Blog & Resources</h1>
+        <p>Your source of market analysis, news, developments, and project reviews for the NFT ecosystem. Discover and keep up to date with the latest NFT news and events. Nexto is the best place to analyze, track and discover NFTs.</p>
+        <div class="nexto-newsletter nexto-search">
+          <input type="email" placeholder="Search...">
+          <button type="submit" id="nexto-submit-btn">Search</button>
+          <button id="nexto-search-btn"><img src="assets/images/svg/search.svg" alt=""></button>
+        </div>
+      </div>
+    </div>
+    <!-- End breadcrumb -->
+    <div class="nexto-blog-top-section">
+      <div class="nexto-blog-top-wrap">
+        <div class="nexto-blog-wrap">
+          <div class="nexto-blog-thumb">
+            <a href="single-blog-dark.html">
+              <img src="assets/images/all-img/blog/dark/blog.png" alt="">
+            </a>
+            <div class="nexto-blog-badge">
+              Art & Analysis
+            </div>
+          </div>
+          <div class="nexto-blog-content">
+            <div class="nexto-blog-date">
+              <ul>
+                <li><img src="assets/images/svg/calendar2.svg" alt="">July 18, 2022</li>
+                <li><img src="assets/images/svg/clock2.svg" alt="">5 min read</li>
+              </ul>
+            </div>
+            <div class="nexto-blog-title">
+              <a href="single-blog-dark.html"><h3>NFTs & Japanese Culture: a rising, diverse community</h3></a>
+            </div>
+            <p>It has now been 6 months since the NFT market saw indicators strongly shaken up, with additional over hype a month ago...</p>
+            <div class="nexto-blog-user">
+              <div class="nexto-blog-user-thumb">
+                <img src="assets/images/all-img/blog/author1.png" alt="">
+              </div>
+              <div class="nexto-blog-user-data">
+                <span>Dianne Russell</span>
+                <p>Author</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End blog top -->
+    <div class="nexto-blog-filtering nexto-section-padding">
+      <div class="nexto-section-title-wrap">
+        <div class="nexto-default-content content-sm">
+          <h2>Latest articles</h2>
+        </div>
+        <div class="nexto-portfolio-menu">
+          <ul class="option-set clear-both" data-option-key="filter">
+            <li class="active" data-option-value="*"> 
+              <span>All</span> 
+            </li>
+            <li class="" data-option-value=".analysis"> 
+              <span>Art & Analysis</span>
+            </li>
+            <li class="" data-option-value=".collectible"> 
+              <span>Collectible</span> 
+            </li>
+            <li class="" data-option-value=".metaverse"> 
+              <span>Metaverse</span> 
+            </li>
+            <li class="" data-option-value=".utility"> 
+              <span>Utility</span> 
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nexto-portfolio-wrap" id="nexto-two-column">
+        <div class="collection-grid-item analysis">
+          <div class="nexto-blog-wrap">
+            <div class="nexto-blog-thumb">
+              <a href="single-blog-dark.html">
+                <img src="assets/images/all-img/blog/dark/blog1.png" alt="">
+              </a>
+              <div class="nexto-blog-badge">
+                Art & Analysis
+              </div>
+            </div>
+            <div class="nexto-blog-content">
+              <div class="nexto-blog-date">
+                <ul>
+                  <li><img src="assets/images/svg/calendar2.svg" alt="">July 18, 2022</li>
+                  <li><img src="assets/images/svg/clock2.svg" alt="">5 min read</li>
+                </ul>
+              </div>
+              <div class="nexto-blog-title">
+                <a href="single-blog-dark.html"><h3>What does the NFT Ecosystem look like after the Boom?</h3></a>
+              </div>
+              <p>It has now been 6 months since the NFT market saw indicators strongly shaken up, with additional over hype a month ago...</p>
+              <div class="nexto-blog-user">
+                <div class="nexto-blog-user-thumb">
+                  <img src="assets/images/all-img/blog/author1.png" alt="">
+                </div>
+                <div class="nexto-blog-user-data">
+                  <span>Dianne Russell</span>
+                  <p>Author</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection-grid-item sports collectible">
+          <div class="nexto-blog-wrap">
+            <div class="nexto-blog-thumb">
+              <a href="single-blog-dark.html">
+                <img src="assets/images/all-img/blog/dark/blog2.png" alt="">
+              </a>
+              <div class="nexto-blog-badge">
+                Art & Analysis
+              </div>
+            </div>
+            <div class="nexto-blog-content">
+              <div class="nexto-blog-date">
+                <ul>
+                  <li><img src="assets/images/svg/calendar2.svg" alt="">July 18, 2022</li>
+                  <li><img src="assets/images/svg/clock2.svg" alt="">5 min read</li>
+                </ul>
+              </div>
+              <div class="nexto-blog-title">
+                <a href="single-blog-dark.html"><h3>MegaCryptoPolis distributed $63M to players since 2018 in Metaverse</h3></a>
+              </div>
+              <p>It has now been 6 months since the NFT market saw indicators strongly shaken up, with additional over hype a month ago...</p>
+              <div class="nexto-blog-user">
+                <div class="nexto-blog-user-thumb">
+                  <img src="assets/images/all-img/blog/author2.png" alt="">
+                </div>
+                <div class="nexto-blog-user-data">
+                  <span>Kathryn Murphy</span>
+                  <p>Author</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection-grid-item collectible">
+          <div class="nexto-blog-wrap">
+            <div class="nexto-blog-thumb">
+              <a href="single-blog-dark.html">
+                <img src="assets/images/all-img/blog/dark/blog3.png" alt="">
+              </a>
+              <div class="nexto-blog-badge">
+                Art & Analysis
+              </div>
+            </div>
+            <div class="nexto-blog-content">
+              <div class="nexto-blog-date">
+                <ul>
+                  <li><img src="assets/images/svg/calendar2.svg" alt="">July 18, 2022</li>
+                  <li><img src="assets/images/svg/clock2.svg" alt="">5 min read</li>
+                </ul>
+              </div>
+              <div class="nexto-blog-title">
+                <a href="single-blog-dark.html"><h3>Always be on time on your NFTs and metaverse event with Dwiss!</h3></a>
+              </div>
+              <p>It has now been 6 months since the NFT market saw indicators strongly shaken up, with additional over hype a month ago...</p>
+              <div class="nexto-blog-user">
+                <div class="nexto-blog-user-thumb">
+                  <img src="assets/images/all-img/blog/author3.png" alt="">
+                </div>
+                <div class="nexto-blog-user-data">
+                  <span>Dianne Russell</span>
+                  <p>Author</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection-grid-item metaverse sports ">
+          <div class="nexto-blog-wrap">
+            <div class="nexto-blog-thumb">
+              <a href="single-blog-dark.html">
+                <img src="assets/images/all-img/blog/dark/blog4.png" alt="">
+              </a>
+              <div class="nexto-blog-badge">
+                Art & Analysis
+              </div>
+            </div>
+            <div class="nexto-blog-content">
+              <div class="nexto-blog-date">
+                <ul>
+                  <li><img src="assets/images/svg/calendar2.svg" alt="">July 18, 2022</li>
+                  <li><img src="assets/images/svg/clock2.svg" alt="">5 min read</li>
+                </ul>
+              </div>
+              <div class="nexto-blog-title">
+                <a href="single-blog-dark.html"><h3>Mekaverse Launch: Let’s take a step back with data!</h3></a>
+              </div>
+              <p>It has now been 6 months since the NFT market saw indicators strongly shaken up, with additional over hype a month ago...</p>
+              <div class="nexto-blog-user">
+                <div class="nexto-blog-user-thumb">
+                  <img src="assets/images/all-img/blog/author4.png" alt="">
+                </div>
+                <div class="nexto-blog-user-data">
+                  <span>Theresa Webb</span>
+                  <p>Author</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection-grid-item utility collectible">
+          <div class="nexto-blog-wrap">
+            <div class="nexto-blog-thumb">
+              <a href="single-blog-dark.html">
+                <img src="assets/images/all-img/blog/dark/blog5.png" alt="">
+              </a>
+              <div class="nexto-blog-badge">
+                Art & Analysis
+              </div>
+            </div>
+            <div class="nexto-blog-content">
+              <div class="nexto-blog-date">
+                <ul>
+                  <li><img src="assets/images/svg/calendar2.svg" alt="">July 18, 2022</li>
+                  <li><img src="assets/images/svg/clock2.svg" alt="">5 min read</li>
+                </ul>
+              </div>
+              <div class="nexto-blog-title">
+                <a href="single-blog-dark.html"><h3>Ultra Club & NFTs: Is E11even Miami the King of Non-Fungible Nightlife?</h3></a>
+              </div>
+              <p>It has now been 6 months since the NFT market saw indicators strongly shaken up, with additional over hype a month ago...</p>
+              <div class="nexto-blog-user">
+                <div class="nexto-blog-user-thumb">
+                  <img src="assets/images/all-img/blog/author1.png" alt="">
+                </div>
+                <div class="nexto-blog-user-data">
+                  <span>Arlene McCoy</span>
+                  <p>Author</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection-grid-item utility">
+          <div class="nexto-blog-wrap">
+            <div class="nexto-blog-thumb">
+              <a href="single-blog-dark.html">
+                <img src="assets/images/all-img/blog/dark/blog6.png" alt="">
+              </a>
+              <div class="nexto-blog-badge">
+                Art & Analysis
+              </div>
+            </div>
+            <div class="nexto-blog-content">
+              <div class="nexto-blog-date">
+                <ul>
+                  <li><img src="assets/images/svg/calendar2.svg" alt="">July 18, 2022</li>
+                  <li><img src="assets/images/svg/clock2.svg" alt="">5 min read</li>
+                </ul>
+              </div>
+              <div class="nexto-blog-title">
+                <a href="single-blog-dark.html"><h3>ART Domains open call: exhibit in the metaverse with Roborace</h3></a>
+              </div>
+              <p>It has now been 6 months since the NFT market saw indicators strongly shaken up, with additional over hype a month ago...</p>
+              <div class="nexto-blog-user">
+                <div class="nexto-blog-user-thumb">
+                  <img src="assets/images/all-img/blog/author1.png" alt="">
+                </div>
+                <div class="nexto-blog-user-data">
+                  <span>Marvin McKinney</span>
+                  <p>Author</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nexto-pagination nexto-pagination2">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next <img src="assets/images/svg/arrow-right-black.svg" alt=""> </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  {% include "../templates/layout/header-footer/footer-two.html" %} 
+  
+{% endblock %}

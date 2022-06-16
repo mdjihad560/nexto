@@ -1,5 +1,6 @@
-.pagination-section .pagination {
-  margin-bottom: 20px;
+
+.pagination {
+ justify-content: center;
 }
 .page-item {
   margin-right: 13px;
@@ -7,8 +8,8 @@
     margin-right: 0px;
   }
   .page-link {
-    height: 40px;
-    width: 40px;
+    height: 55px;
+    width: 60px;
     background-color: transparent;
     color: #fff;
     border: none;
@@ -16,61 +17,67 @@
     justify-content: center;
     align-items: center;
     padding: 0px;
-    border-radius: 50%;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--gray-600);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gray-10);
     text-align: center;
-    @include breakpoint(xs) {
-      height: 35px;
-      width: 35px;
-    }
     &:focus {
       box-shadow: none;
       outline: none;
     }
     &:hover {
-      background-color: var(--gray-50);
-      color: var(--gray-900);
+      background-color: var(--gray-900);
     }
   }
-  &:first-child,
+  &:first-child {
+    .page-link {
+      border-radius: 10px;
+    }
+  }
   &:last-child {
     .page-link {
-      border-radius: 50%;
-      font-size: 20px;
-      background: var(--primary-50);
-      color: var(--primary-500);
-      &:hover {
-        background: var(--primary-50);
-        color: var(--primary-500);
+      svg{
+        width: 20px;
+        height: 20px;
+        path{
+          stroke: var(--gray-800);
+        }
+      }
+      
+      &:hover{
+        background-color: transparent!important;
+      }
+      img{
+        margin-left: 10px;
       }
     }
   }
   &.active {
     .page-link {
       color: white;
-      background-color: var(--primary-500);
+      background-color: var(--gray-900);
     }
   }
 }
 
-.page-item.page-item2 {
-  .page-link {
-    width: 22px;
-    height: 22px;
-    font-size: 12px;
-  }
-  &:first-child,
-  &:last-child {
-    .page-link {
-      font-size: 12px;
-      background: transparent;
-      color: var(--gray-500);
-      &:hover {
-        background-color: var(--gray-50);
-        color: var(--gray-900);
-      }
+.nexto-pagination{
+  text-align: center;
+    margin-top: 56px;
+    @include max(767px) {
+        margin-top: 35px;
     }
+}
+
+.nexto-pagination2{
+  .page-item {
+    .page-link{
+      color: var(--gray-800);
+    }
+    &:hover .page-link,
+    &.active .page-link{
+      background-color: var(--danger-500);
+    }
+    
   }
 }

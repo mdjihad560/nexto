@@ -152,6 +152,15 @@
 .nexto-portfolio-btn {
     text-align: center;
     margin-top: 56px;
+    @include max(991px) {
+        margin-top: 35px;
+    }
+}
+.nexto-section-button{
+    @include max(991px) {
+        margin-top: 35px;
+        text-align: center;
+    }
 }
 
 
