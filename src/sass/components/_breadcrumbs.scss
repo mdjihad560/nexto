@@ -1,11 +1,4 @@
-.nexto-about-hero-section.dark-version {
-  background-size: cover;
-  padding: 200px 0 10px;
-  background-color: var(--gray-800);
-  @include max(575px) {
-    padding: 150px 0 10px;
-  }
-}
+
 
 .nexto-breadcrumb-thumb {
   overflow: hidden;
@@ -17,17 +10,18 @@
     object-fit: cover;
     object-position: center top;
   }
-  &-bottom, &-top{
+  &-bottom, 
+  &-top{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include max(767px) {
+      display: none;
+    }
   }
   &-top{
     max-width: 873px;
     margin: 0 auto 80px;
-    @include max(575px) {
-      margin: 0 auto 40px;
-    }
   }
   &.thumb1{
     width: 80px;

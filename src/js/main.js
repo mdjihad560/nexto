@@ -227,6 +227,18 @@ if(nexto_client_slider.is_exist()){
 
 }
 
+/*--------------------------------------------------------------
+YOUTUBE MAGNIFIC POPUP JS INIT
+------------------------------------------------------------*/
+var swiper_slider = $('.nexto-swiper-slider');
+if (swiper_slider.is_exist()){
+  swiper_slider = new Swiper(".nexto-swiper-slider", {
+  effect: "cards",
+  grabCursor: true,
+});
+}
+
+
 
 /*--------------------------------------------------------------
 YOUTUBE MAGNIFIC POPUP JS INIT
@@ -242,30 +254,12 @@ var popup_youtube = $('.nexto-popup');
 
 // card like js
 const nextoBtnTigger = document.querySelectorAll('.nexto-tigger');
-
-nextoBtnTigger.forEach(linkbtn => {
-  linkbtn.addEventListener('click', () => {
-    linkbtn.classList.toggle("dark-btn");
-  });
-})
-
-
-// wow
-var wow = $('.wow');
-	if(wow.is_exist()){
-	var wow = new WOW({
-	  mobile: true,       // default
-	  tablet:true,
-	  callback: function(box) {
-	    if (box.classList.contains('exeter-animate')) {
-	      box.classList.add("exeter-signal-loaded");
-	    }
-	  }
-	});
-	if ( $(window).width() >= 768  ) {
-	 wow.init();
-	}
-}
+  nextoBtnTigger.forEach(linkbtn => {
+    linkbtn.addEventListener('click', () => {
+      linkbtn.classList.toggle("dark-btn");
+    });
+  })
+ 
 
 
   });/*End document ready*/

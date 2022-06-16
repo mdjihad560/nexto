@@ -1,6 +1,14 @@
 
 // about dark
 // about section
+.nexto-about-hero-section.dark-version {
+  background-size: cover;
+  padding: 200px 0 10px;
+  background-color: var(--gray-800);
+  @include max(767px) {
+    padding: 80px 0 0;
+  }
+}
 .nexto-about-section2{
   z-index: 0;
   position: relative;
@@ -35,14 +43,23 @@
     transition: all 0.4s;
 }
 
-.test{
-  position: relative;
-}
-
 // nexto vision section
 .nexto-vision-section{
+  overflow: hidden;
   background-color: var(--gray-800);
 }
+.swiper-cards .swiper-slide{
+  overflow: inherit;
+}
+
+.nexto-swiper-slider-wrap{
+  position: relative;
+  @include max(991px) {
+    margin-top: 40px;
+  }
+}
+
+
 
 // video section
 .nexto-video-section2{
