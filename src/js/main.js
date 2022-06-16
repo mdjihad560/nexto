@@ -233,8 +233,10 @@ YOUTUBE MAGNIFIC POPUP JS INIT
 var swiper_slider = $('.nexto-swiper-slider');
 if (swiper_slider.is_exist()){
   swiper_slider = new Swiper(".nexto-swiper-slider", {
+  loop: true,
   effect: "cards",
   grabCursor: true,
+  autoplay: true,
 });
 }
 
