@@ -43,7 +43,7 @@
     position: relative;
     transform: rotate(3deg);
     @include max(991px) {
-      transform: rotate(0deg);
+      transform: rotate(0deg)!important;
       margin-top: 30px;
     }
   }

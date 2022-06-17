@@ -240,7 +240,27 @@ if (swiper_slider.is_exist()){
 });
 }
 
+/*--------------------------------------------------------------
+SCROLL EFFECT ONE JS INIT
+------------------------------------------------------------*/
+var $rotateOne = $('#rotateOne');
+var $win = $(window);
 
+$win.on('scroll', function () {
+  var right = 3-$win.scrollTop()*0.01;
+  $rotateOne.css('transform', 'rotate(' + right + 'deg)');
+});
+
+/*--------------------------------------------------------------
+SCROLL EFFECT TWO JS INIT
+------------------------------------------------------------*/
+var $rotateZ = $('#rotateTwo');
+var $win = $(window);
+
+$win.on('scroll', function () {
+  var right = 18-$win.scrollTop()*0.01;
+  $rotateZ.css('transform', 'rotate(' + right + 'deg)');
+});
 
 /*--------------------------------------------------------------
 YOUTUBE MAGNIFIC POPUP JS INIT
