@@ -33,23 +33,32 @@
   &:first-child {
     .page-link {
       border-radius: 10px;
+      svg{
+        left: -22px;
+        transform: rotate(180deg);
+      }
     }
   }
+  &:first-child,
   &:last-child {
     .page-link {
-      svg{
-        width: 20px;
-        height: 20px;
-        path{
-          stroke: var(--gray-800);
-        }
+      &:hover{
+        color: #0080ff;
       }
-      
+      svg{
+        position: absolute;
+        right: -22px;
+        path{
+          stroke: var(--gray-10);
+          transition: all 0.4s;
+        }
+        
+      }
+      &:hover path{
+        stroke: #0080ff;
+      }
       &:hover{
         background-color: transparent!important;
-      }
-      img{
-        margin-left: 10px;
       }
     }
   }
@@ -73,11 +82,40 @@
   .page-item {
     .page-link{
       color: var(--gray-800);
+      svg{
+        position: absolute;
+        right: -22px;
+        path{
+          stroke: var(--gray-800);
+          transition: all 0.4s;
+        }
+        
+      }
+      &:hover{
+        color: var(--gray-800);
+      }
+      
+      &:hover path{
+        stroke: var(--danger-500);
+      }
     }
     &:hover .page-link,
     &.active .page-link{
       background-color: var(--danger-500);
     }
-    
+    &:first-child,
+      &:last-child {
+        .page-link {
+          &:hover{
+            color: var(--danger-500);
+          }
+          &:hover path{
+            stroke: var(--danger-500);
+          }
+          &:hover{
+            background-color: transparent!important;
+          }
+        }
+      }
   }
 }

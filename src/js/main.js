@@ -35,6 +35,39 @@ COUNTER JS INIT
 var nexto_counter = $('#nexto-counter');
   if(nexto_counter.is_exist()){
       var a = 0;
+
+      var oTop = $(nexto_counter).offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.nexto-counter').each(function() {
+          var $this = $(this),
+            countTo = $this.attr('data-percentage');
+          $({
+            countNum: $this.text()
+          }).animate({
+              countNum: countTo
+            },
+            {
+              duration: 4000,
+              easing: 'swing',
+              step: function() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function() {
+                $this.text(this.countNum);
+              }
+            });
+        });
+        a = 1;
+      }
+
+}
+
+/*--------------------------------------------------------------
+COUNTER TWO JS INIT
+--------------------------------------------------------------*/
+var nexto_counter = $('#nexto-counter2');
+  if(nexto_counter.is_exist()){
+      var a = 0;
       $(window).scroll(function() {
 
         var oTop = $(nexto_counter).offset().top - window.innerHeight;
@@ -245,7 +278,6 @@ SCROLL EFFECT ONE JS INIT
 ------------------------------------------------------------*/
 var $rotateOne = $('#rotateOne');
 var $win = $(window);
-
 $win.on('scroll', function () {
   var right = 3-$win.scrollTop()*0.01;
   $rotateOne.css('transform', 'rotate(' + right + 'deg)');
@@ -254,12 +286,21 @@ $win.on('scroll', function () {
 /*--------------------------------------------------------------
 SCROLL EFFECT TWO JS INIT
 ------------------------------------------------------------*/
-var $rotateZ = $('#rotateTwo');
+var $rotateTwo = $('#rotateTwo');
 var $win = $(window);
-
 $win.on('scroll', function () {
   var right = 18-$win.scrollTop()*0.01;
-  $rotateZ.css('transform', 'rotate(' + right + 'deg)');
+  $rotateTwo.css('transform', 'rotate(' + right + 'deg)');
+});
+
+/*--------------------------------------------------------------
+SCROLL EFFECT THREE JS INIT
+------------------------------------------------------------*/
+var $rotateThree = $('#rotateThree');
+var $win = $(window);
+$win.on('scroll', function () {
+  var right = 36-$win.scrollTop()*0.01;
+  $rotateThree.css('transform', 'rotate(' + right + 'deg)');
 });
 
 /*--------------------------------------------------------------

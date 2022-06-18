@@ -1,9 +1,11 @@
 
 .nexto-hero-section {
+  z-index: 0;
   padding: 200px 0 120px;
   background-size: cover;
   position: relative;
   background-position: center;
+  background-color: var(--gray-800);
   @include max(991px){
     padding: 200px 0 100px;
   }
@@ -51,13 +53,62 @@
   margin: 35px 0 0;
 }
 
-.nexto-hero-thumb {
-  text-align: right;
+.nexto-hero-right {
+  width: 490px;
+  float: right;
   transform: rotate(3deg);
+  @include max(1400px) {
+    width: 100%;
+  }
   @include max(991px){
-    text-align: center;
+    float: none;
     transform: rotate(0deg)!important;
+    margin: 0 auto;
     margin-top: 50px;
+    width: 480px;
+  }
+  @include max(767px) {
+    width: 100%;
+  }
+  .nexto-card {
+    &-wrap{
+      background: rgba(90, 75, 124, 0.5);
+      backdrop-filter: blur(400px);
+      &:before{
+        content: none;
+      }
+      &:hover{
+        box-shadow: 0 0 0 1px #fff;
+      }
+     
+    }
+    &-data{
+      margin: 0;
+      padding: 40px 10px 20px;
+      @include max(575px) {
+        padding: 20px 5px 5px;
+      }
+      h3{
+        font-size: 30px;
+        @include max(575px) {
+          font-size: 24px;
+        }
+      }
+      .nexto-card-footer-data{
+        span{
+          display: block;
+          margin-bottom: 10px;
+        }
+        h4{
+          font-size: 30px;
+          @include max(575px) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    
+    
   }
 }
 
@@ -90,9 +141,6 @@
           animation: float 3s ease-in-out infinite;
   }
 }
-
-
-
 .nexto-hero-mocup{
   position: absolute;
   animation: zoom-in-zoom-out 5s ease-out infinite;
@@ -172,7 +220,9 @@
 // home 3
 
 .nexto-hero-section3{
+  z-index: 0;
   padding: 280px 0 120px;
+  position: relative;
   background-size: cover;
   background-position: center;
   background-color: var(--gray-800);
@@ -193,13 +243,17 @@
     &:hover{
       background-color: var(--primary-500);
     }
+    &.active{
+      background-color: var(--primary-500);
+      box-shadow: 5px 5px 0px 0px var(--gray-10);
+    }
   }
 }
 .nexto-thumb-three{
   text-align: right;
   @include max(991px) {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
   }
 }
 .nexto-hero-thumb3{

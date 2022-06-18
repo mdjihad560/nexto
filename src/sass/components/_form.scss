@@ -14,6 +14,7 @@ input, textarea {
   background-color: #fff;
   padding: 10px 25px !important;
   border: none!important;
+  transition: all 0.4s;
 }
 
 .nexto-newsletter {
@@ -64,6 +65,9 @@ button#nexto-search-btn {
   &.nexto-newsletter2{
     max-width: 466px;
     margin: 45px 0 0;
+    input{
+      padding: 10px 160px 10px 25px!important;
+    }
     @include max(991px) {
       max-width: 100%;
     }

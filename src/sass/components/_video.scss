@@ -1,6 +1,7 @@
 .nexto-video-section {
-  background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
+  background-color: var(--gray-800);
   .nexto-btn-wrap {
       margin: 45px 0 0;
   }
@@ -72,19 +73,16 @@
       -webkit-transform: scale(0.2, 0.2);
       transform: scale(0.2, 0.2);
       opacity: 0;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   }
 
   50% {
       opacity: 0.9;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
   }
 
   100% {
       -webkit-transform: scale(0.9, 0.9);
       transform: scale(0.9, 0.9);
       opacity: 0;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   }
 }
 
@@ -94,12 +92,13 @@
 .nexto-video {
   &-wrap{
     position: relative;
-      a.nexto-popup {
+      .nexto-popup {
         position: absolute;
         top: 43%;
         left: 52%;
         transform: translate(-50%, -50%);
-        -webkit-animation: rotate-animation 10s infinite linear;
+        img{
+          -webkit-animation: rotate-animation 10s infinite linear;
         -moz-animation: rotate-animation 10s infinite linear;
         -o-animation: rotate-animation 10s infinite linear;
         animation: rotate-animation 10s infinite linear;
@@ -108,6 +107,7 @@
           -moz-animation-play-state:paused;
           -o-animation-play-state:paused;
           animation-play-state:paused;
+        }
         }
         @include max(1199px) {
           width: 120px;
@@ -151,7 +151,15 @@
   }
   
 }
-
+.nexto-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  img{
+    animation: none !important;
+  }
+}
 @keyframes rotate-animation {
 	0% {
 		transform: rotate(0deg);

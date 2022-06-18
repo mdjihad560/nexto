@@ -1,6 +1,9 @@
 .nexto-cta-section {
+  z-index: 0;
   background-size: cover;
   padding: 50px 0 120px;
+  position: relative;
+  background-color: var(--gray-800);
   @include max(991px) {
     padding: 0px 0 100px;
   }
