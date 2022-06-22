@@ -7,6 +7,8 @@
   }
   .nexto-default-content {
     padding-left: 30px;
+    position: relative;
+    z-index: 1;
     @include max(1400px) {
       padding: 0;
     }
@@ -14,11 +16,12 @@
 }
 
 .nexto-video-thumb{
+  z-index: 0;
   position: relative;
   margin-right: 50px;
   border-radius: 3px;
   @include max(1199px) {
-    margin: 30px 0 0;
+    margin: 0 0 30px;
   }
   img{
     border-radius: 3px;
@@ -94,8 +97,8 @@
     position: relative;
       .nexto-popup {
         position: absolute;
-        top: 43%;
-        left: 52%;
+        top: 48%;
+        left: 58%;
         transform: translate(-50%, -50%);
         img{
           -webkit-animation: rotate-animation 10s infinite linear;
@@ -120,12 +123,10 @@
         @include max(767px) {
           width: 75px;
           height: 75px;
-          left: 50%;
         }
         @include max(479px) {
           width: 55px;
           height: 55px;
-          top: 40%;
         }
     }
   }
@@ -133,6 +134,7 @@
     display: flex;
     .nexto-video-thumb{
       margin-right: 30px;
+      position: relative;
       @include max(1199px) {
         margin: 0;
         margin-right: 20px;
@@ -158,7 +160,11 @@
   transform: translate(-50%, -50%);
   img{
     animation: none !important;
+    @include max(767px) {
+      width: 15px;
+    }
   }
+ 
 }
 @keyframes rotate-animation {
 	0% {

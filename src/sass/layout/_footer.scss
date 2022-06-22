@@ -3,21 +3,22 @@ footer.nexto-footer-section{
   background-color: var(--gray-800);
 }
 .nexto-footer-top {
-  padding: 130px 0 60px;
+  padding: 120px 0 60px;
   border-bottom: 1px solid var(--gray-700);
   @include max(991px){
-    padding: 100px 0 60px;
+    padding: 100px 0 30px;
   }
   @include max(767px){
-    padding: 80px 0 60px;
+    padding: 80px 0 15px;
   }
   @include max(575px){
-    padding: 80px 0 30px;
+    padding: 80px 0 0;
   }
 }
 .nexto-textarea{
   @include max(991px){
     margin-bottom: 30px;
+    max-width: 500px;
   }
   .nexto-footer-logo{
     margin-bottom: 30px;
@@ -32,7 +33,7 @@ footer.nexto-footer-section{
 
 .nexto-footer-menu{
   @include max(575px){
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   span{
     font-weight: 600;
@@ -40,6 +41,9 @@ footer.nexto-footer-section{
     line-height: 1;
     margin-bottom: 30px;
     display: block;
+    @include max(575px){
+      margin-bottom: 20px;
+    }
   }
   ul{
     li{
@@ -67,7 +71,12 @@ footer.nexto-footer-section{
   padding: 35px 0;
   @include max(767px){
     display: block;
-    text-align: center
+    text-align: center;
+  }
+  @include max(575px){
+    display: block;
+    text-align: center;
+    padding: 10px 0 35px;
   }
   p{
     font-size: 16px;
@@ -121,10 +130,10 @@ footer.nexto-foote2-section {
     padding: 120px 0;
     border: none;
     @include max(991px) {
-      padding: 80px 0;
+      padding: 70px 0;
     }
     @include max(767px) {
-      padding: 60px 0;
+      padding: 50px 0 ;
     }
   }
   .nexto-default-content {
@@ -153,7 +162,7 @@ footer.nexto-foote2-section {
   .nexto-footer-logo{
     @include max(991px) {
       text-align: center;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
   }
   .nexto-social-icon2{
@@ -222,6 +231,9 @@ footer.nexto-foote2-section {
   display: block;
   p{
     margin: 0;
+    @include max(991px) {
+      text-align: center;
+    }
   }
   .nexto-footer-menu{
     text-align: right;

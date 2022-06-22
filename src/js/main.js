@@ -114,25 +114,21 @@ var nexto_slider_one = $('.nexto-slider-one');
 			nextArrow: '<button class="slide-arrow next-arrow"></button>',
       responsive: [
         {
-          breakpoint: 1400,
+          breakpoint: 1399,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
           }
         },
         {
-          breakpoint: 992,
+          breakpoint: 991,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
           }
         },
         {
-          breakpoint: 700,
+          breakpoint: 767,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
             arrows: false
           }
         }

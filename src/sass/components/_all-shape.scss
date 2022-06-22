@@ -1,0 +1,171 @@
+.nexto-circle-shape{
+  z-index: 0;
+  z-index: -1;
+  position: absolute;
+  .waves {
+    background: rgba(44, 4, 254, 0.15);
+
+    &.wave-1 {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+    }
+  }
+  &.circle-one{
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &.circle-two{
+    left: 45px;
+    bottom: 30%;
+  }
+  &.circle-three{
+    top: -23%;
+    right: 0;
+  }
+  &.circle-four{
+    bottom: 25%;
+    left: 70px;
+  }
+  &.circle-five{
+    left: 10%;
+    top: 34%;
+  }
+  &.circle-six{
+    left: 35%;
+    top: 0%;
+  }
+  &.circle-seven{
+    right: 20%;
+    bottom: 10%;
+  }
+  &.circle-eight{
+    top: 20%;
+    left: 5%;
+  }
+  &.circle-nine{
+    bottom: 18%;
+    right: 3%;
+  }
+  
+}
+
+
+
+// home version 01
+.nexto-shape1 {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: -1;
+}
+
+.nexto-shape2 {
+  position: absolute;
+  top: 50px;
+  z-index: -1;
+}
+
+.nexto-shape3{
+  top: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.nexto-shape4 {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// version two
+.nexto-hero-shpae1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 30%;
+  img{
+    width: 100%;
+  }
+}
+
+.nexto-hero-shpae2 {
+  top: 14%;
+  z-index: -1;
+  left: 7%;
+  width: 28%;
+  position: absolute;
+  img{
+    width: 100%;
+  }
+}
+
+.nexto-shape-art {
+  position: absolute;
+  top: -44%;
+  z-index: -1;
+  right: -42%;
+  width: 100%;
+  img{
+    width: 100%;
+  }
+  @include max(1199px) {
+    top: -35%;
+    right: -35%;
+  }
+  &.nexto-shape-art2{
+    top: -35%;
+    right: -5%;
+  }
+}
+
+// version three
+.nexto-video-shape1, 
+.nexto-video-shape2  {
+  width: 71.4%;
+  height: 71.4%;
+  z-index: -1;
+  top: -95px;
+  right: -80px;
+  position: absolute;
+  @include max(1199px) {
+    right: 0;
+  }
+  @include max(700px) {
+    display: none;
+  }
+}
+.nexto-video-shape2  {
+  width: 86.4%;
+  height: 100%;
+  top: auto;
+  right: auto;
+  bottom: -46px;
+  left: -26%;
+}
+
+
+.nexto-content-shape {
+  z-index: -1;
+  position: absolute;
+  bottom: -60%;
+  width: 161%;
+  height: 161%;
+  left: -35%;
+  @include max(1199px){
+    bottom: auto;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @include max(700px) {
+    display: none;
+  }
+  img{
+    width: 100%;
+  }
+}

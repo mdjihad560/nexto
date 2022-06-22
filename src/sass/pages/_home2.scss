@@ -11,7 +11,26 @@
 // about section
 .nexto-about-section{
   overflow: hidden;
+  padding: 120px 0;
+  @include max(991px) {
+    padding: 100px 0 ;
+  }
+  @include max(767px) {
+    padding: 80px 0 ;
+  }
+  .nexto-default-content{
+    @include max(991px) {
+      max-width: 500px;
+    }
+  }
 }
+.nexto-swiper-slider-wrap{
+  position: relative;
+  @include max(991px) {
+    margin-bottom: 40px;
+  }
+}
+
 .nexto-double-star {
   position: absolute;
   left: -90px;
@@ -22,12 +41,28 @@
 
 // default section
 .nexto-artwork-section {
-  background-size: cover;
-  background-position: center;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  padding: 120px 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -51.59%, #EEE6D0 119.2%);
+  @include max(991px) {
+    padding: 100px 0 0;
+  }
+  @include max(767px) {
+    padding: 80px 0 0;
+  }
+  .nexto-default-content{
+    @include max(991px) {
+      max-width: 500px;
+    }
+  }
 }
 .nexto-artwork {
   &-right{
     text-align: right;
+    position: relative;
+    z-index: 0;
     @include max(991px) {
       text-align: center;
     }
@@ -44,7 +79,7 @@
     transform: rotate(3deg);
     @include max(991px) {
       transform: rotate(0deg)!important;
-      margin-top: 30px;
+      margin-bottom: 40px;
     }
   }
   &-data{
@@ -93,6 +128,12 @@
     max-width: 485px;
     text-align: left;
     margin: 0 0 75px;
+    @include max(991px) {
+      margin: 0 0 50px;
+    }
+    p{
+      padding: 0;
+    }
 }
 
 }

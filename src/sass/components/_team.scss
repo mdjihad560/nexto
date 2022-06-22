@@ -6,12 +6,7 @@
   border-bottom: 1px solid #26242C;
 }
 
-.nexto-shape3{
-  top: 0;
-  right: 0;
-  z-index: -1;
-  position: absolute;
-}
+
 
 .nexto-team {
   &-wrap{
@@ -92,6 +87,18 @@
     }
   }
   
+}
+.nexto-team-two{
+  padding: 110px 0 80px;
+  @include max(991px) {
+    padding: 100px 0 60px;
+  }
+  @include max(767px) {
+    padding: 80px 0 40px;
+  }
+  .nexto-team-wrap {
+    margin-bottom: 40px;
+  }
 }
 
 // team three about light blue

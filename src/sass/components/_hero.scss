@@ -4,20 +4,26 @@
   padding: 200px 0 120px;
   background-size: cover;
   position: relative;
-  background-position: center;
+  background-position: center bottom;
   background-color: var(--gray-800);
   @include max(991px){
-    padding: 200px 0 100px;
+    padding: 175px 0 100px;
   }
   @include max(767px){
-    padding: 150px 0 100px;
+    padding: 150px 0 80px;
+  }
+  @include max(575px){
+    padding: 130px 0 80px;
   }
 }
 .nexto-hero-content {
   max-width: 636px;
   @include max(991px){
     text-align: center;
-    max-width: 100%;
+    margin: 0 auto;
+  }
+  @include max(767px){
+    max-width: 500px;
   }
   p{
     font-size: 20px;
@@ -29,12 +35,46 @@
     }
   }
 }
-
+.nexto-hero-shape1 {
+  position: absolute;
+  bottom: -116px;
+  right: 14%;
+  z-index: -1;
+  @include max(1600px) {
+    right: 3%;
+  }
+  @include max(1400px) {
+    right: 0;
+  }
+  @include max(1199px) {
+    bottom: 0;
+    width: 70%;
+  }
+  @include max(991px) {
+    right: 110px;
+    width: 100%;
+  }
+}
+.nexto-hero-shape2 {
+  width: 18%;
+  height: 37%;
+  position: absolute;
+  background: #2C04FE;
+  opacity: 1;
+  filter: blur(136.18px);
+  border-radius: 100%;
+  top: 15%;
+  right: 10%;
+  z-index: -1;
+  @include max(1600px) {
+    right: 0;
+  }
+}
 .nexto-btn-wrap {
   &.nexto-hero-btn{
     margin: 55px 0 0;
-    @include max(410px){
-      margin: 40px 0 0;
+    @include max(991px){
+      margin: 35px 0 0;
     }
     .nexto-btn{
       margin-right: 20px;
@@ -42,7 +82,7 @@
         margin-right: 0;
       }
       @include max(410px){
-        margin: 0 0 15px;
+        margin: 0 10px 15px;
       }
     }
   }
@@ -56,7 +96,10 @@
 .nexto-hero-right {
   width: 490px;
   float: right;
+  z-index: 0;
   transform: rotate(3deg);
+  position: relative;
+
   @include max(1400px) {
     width: 100%;
   }
@@ -114,9 +157,18 @@
 
 // home 2
 .nexto-hero-section2{
+  z-index: 0;
   padding: 230px 0 235px;
+  position: relative;
+  background-color: var(--warning-500);
   @include max(1199px) {
-    padding: 180px 0 150px;
+    padding: 150px 0 120px;
+  }
+  @include max(767px) {
+    padding: 150px 0 80px;
+  }
+  @include max(479px) {
+    padding: 120px 0 80px;
   }
 }
 .nexto-hero-content2{
@@ -124,6 +176,12 @@
   text-align: center;
   margin: 0 auto;
   position: relative;
+  @include max(991px) {
+    max-width: 565px;
+  }
+  @include max(767px) {
+    max-width: 445px;
+  }
   h1{
     color: var(--gray-800);
     font-family: $another-font;
@@ -144,7 +202,7 @@
 .nexto-hero-mocup{
   position: absolute;
   animation: zoom-in-zoom-out 5s ease-out infinite;
-  @include max(991px) {
+  @include max(767px) {
     display: none;
   }
   &.mocup1{
@@ -227,10 +285,10 @@
   background-position: center;
   background-color: var(--gray-800);
   @include max(991px) {
-    padding: 200px 0 100px;
+    padding: 175px 0 100px;
   }
   @include max(479px) {
-    padding: 160px 0 100px;
+    padding: 130px 0 80px;
   }
 }
 
@@ -259,6 +317,7 @@
 .nexto-hero-thumb3{
   transform: rotate(0deg);
   display: inline-block;
+  position: relative;
   .nexto-bitcoin{
     position: absolute;
     transform: translatey(0px);

@@ -5,12 +5,6 @@
     position: relative;
     z-index: 0;
 }
-.nexto-shape1 {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    z-index: -1;
-}
 
 .nexto-slider-one .slick-slide{
     margin: 2px 12px;
@@ -74,15 +68,14 @@
     }
 }
 
-.nexto-shape2 {
-    position: absolute;
-    top: 50px;
-    z-index: -1;
-}
+
 
 
 .nexto-portfolio-menu{
     margin-bottom: 55px;
+    @include max(991px) {
+        margin-bottom: 35px;
+    }
     ul{
         display: flex;
         justify-content: center;
@@ -210,7 +203,17 @@
 
 // roadmap section
 .nexto-roadmap-section{
+    padding: 115px 0 80px;
     background-color: var(--gray-800);
+    @include max(991px) {
+        padding: 100px 0 60px;
+    }
+    @include max(767px) {
+        padding: 80px 0 40px;
+    }
+    .nexto-iconbox-wrap{
+        margin-bottom: 40px;
+    }
 }
 
 // newsletter section
@@ -219,12 +222,7 @@
     position: relative;
     background-color: var(--gray-800);
 }
-.nexto-shape4 {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 .nexto-newslatter-wrap {
     border-radius: 10px;
     padding: 100px;

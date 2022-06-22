@@ -1,6 +1,12 @@
 // client section
 .nexto-client-section{
-  padding: 80px 0;
+  padding: 0 0 120px;
+  @include max(1199px) {
+    padding: 0 0 100px;
+  }
+  @include max(767px) {
+    padding: 0 0 80px;
+  }
   background-color: var(--gray-800);
 }
 .nexto-client-title{
@@ -19,44 +25,49 @@
 }
 // content section
 .nexto-content-section {
-  overflow: hidden;
+  z-index: 0;
+  position: relative;
   background-position: center center;
   background-repeat: no-repeat;
   background-color: var(--gray-800);
   
 }
 .nexto-content-top{
-  .nexto-default-content {
-    margin-right: 51px;
-    @include max(1400px) {
-      margin-right: 0;
-    }
-  }
-  .nexto-content-thumb{
-    width: 100%;
-    z-index: 0;
-    text-align: right;
-    position: relative;
-    @include max(1199px) {
-      text-align: center;
-      margin-top: 50px;
-    }
-  }
-}
-.nexto-content-bottom {
-  padding: 30px 0 120px;
+  padding: 0 0 120px;
   @include max(991px) {
     padding: 0 0 100px;
   }
   @include max(767px) {
     padding: 0 0 80px;
   }
+  .nexto-default-content {
+    margin-right: 51px;
+    @include max(991px) {
+      max-width: 550px;
+    }
+    @include max(575px) {
+      margin-right: 0;
+    }
+  }
   .nexto-content-thumb{
+    z-index: 0;
+    text-align: right;
     position: relative;
     @include max(1199px) {
       text-align: center;
-      margin-top: 40px;
-      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+}
+.nexto-content-bottom {
+  .nexto-content-thumb{
+    z-index: 0;
+    position: relative;
+    @include max(1199px) {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
     }
     .nexto-bitcoin {
       position: absolute;
@@ -65,15 +76,22 @@
       width: 87%;
       -webkit-animation: float 3s ease-in-out infinite;
       animation: float 3s ease-in-out infinite;  
-      @include max(767px) {
-        right: -45px;
+      @include max(991px) {
+        right: -40px;
+      }
+      @include max(479px) {
+        right: 0;
       }
     }
   }
   .nexto-default-content {
     padding: 0 20px;
+    
     @include max(1199px) {
       padding: 0;
+    }
+    @include max(991px) {
+      max-width: 550px;
     }
 }
 }
