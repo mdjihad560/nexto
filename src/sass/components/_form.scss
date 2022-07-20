@@ -10,19 +10,57 @@ input, textarea {
   margin: 0;
   width: 100%;
   height: 55px;
+  color: #fff;
   border-radius: 10px;
-  background-color: #fff;
-  padding: 10px 25px !important;
+  background-color: transparent;
+  padding: 15px 30px !important;
   border: none!important;
   transition: all 0.4s;
+  border: 1px solid #FFFFFF!important;
 }
 
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+    color:    #fff;
+    opacity: 0.8;
+}
+input:-moz-placeholder, 
+textarea:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  0.8;
+}
+input::-moz-placeholder, 
+textarea::-moz-placeholder{ /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  0.8;
+}
+input:-ms-input-placeholder, 
+textarea:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+   color:    #fff;
+   opacity: 0.8;
+}
+input::-ms-input-placeholder, 
+textarea::-ms-input-placeholder{ /* Microsoft Edge */
+   color:    #fff;
+   opacity: 0.8;
+}
+
+input::placeholder, 
+textarea::placeholder{ /* Most modern browsers support this now. */
+   color:    #fff;
+   opacity: 0.8;
+}
+
+
+// all newsletter
 .nexto-newsletter {
   max-width: 430px;
   position: relative;
   margin: 0 auto;
   input{
+    color: #13111A;
     padding: 10px 150px 10px 25px!important;
+    background-color: var(--gray-10);
   }
   &.nexto-search{
     input{
@@ -85,4 +123,29 @@ button#nexto-search-btn {
 
     }
   }
+}
+.nexto-newsletter input::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+    color:    #13111A;
+    opacity: 0.5;
+}
+.nexto-newsletter input:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+   color:    #13111A;
+   opacity:  0.5;
+}
+.nexto-newsletter input::-moz-placeholder{ /* Mozilla Firefox 19+ */
+   color:    #13111A;
+   opacity:  0.5;
+}
+.nexto-newsletter input:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+   color:    #13111A;
+   opacity: 0.5;
+}
+.nexto-newsletter input::-ms-input-placeholder{ /* Microsoft Edge */
+   color:    #13111A;
+   opacity: 0.5;
+}
+
+.nexto-newsletter input::placeholder{ /* Most modern browsers support this now. */
+   color:    #13111A;
+   opacity: 0.5;
 }

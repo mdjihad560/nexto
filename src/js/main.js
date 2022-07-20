@@ -104,31 +104,34 @@ var nexto_slider_one = $('.nexto-slider-one');
   if(nexto_slider_one.is_exist()){
     nexto_slider_one.slick({
       infinite: true,
-      center: true,
       slidesToShow: 4, 
       slidesToScroll: 1,
       arrows: true,
       autoplay: false,
-      dots: false,
+      autoplay: true,
+	    autoplaySpeed: 2000,
       prevArrow: '<button class="slide-arrow prev-arrow"></button>',
 			nextArrow: '<button class="slide-arrow next-arrow"></button>',
       responsive: [
         {
-          breakpoint: 1399,
+          breakpoint: 1400,
           settings: {
             slidesToShow: 3,
+            slidesToScroll: 1
           }
         },
         {
-          breakpoint: 991,
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
+            slidesToScroll: 1
           }
         },
         {
           breakpoint: 767,
           settings: {
             slidesToShow: 1,
+            slidesToScroll: 1,
             arrows: false
           }
         }
@@ -319,8 +322,6 @@ const nextoBtnTigger = document.querySelectorAll('.nexto-tigger');
     });
   })
  
-
-
   });/*End document ready*/
   
   
@@ -408,7 +409,6 @@ const nextoBtnTigger = document.querySelectorAll('.nexto-tigger');
     });
   }
   
-
   /*--------------------------------------------------------------
   TWO COLUMN FILTER JS INIT
   ------------------------------------------------------------*/
@@ -486,12 +486,7 @@ const nextoBtnTigger = document.querySelectorAll('.nexto-tigger');
   }); // End window LODE
   
 
-  
-  
-  
-  
-  
-  
+
   })(jQuery);
   
   

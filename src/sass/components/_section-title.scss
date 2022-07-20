@@ -88,8 +88,6 @@
     }
   }
   p{
-      font-size: 18px;
-      line-height: 30px;
       @include max(767px) {
         font-size: 16px;
         line-height: 26px;
