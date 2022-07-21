@@ -19,6 +19,14 @@ input, textarea {
   border: 1px solid #FFFFFF!important;
 }
 
+textarea {
+  height: 200px;
+  resize: none;
+  @include max(767px) {
+    height: 120px;
+  }
+}
+
 input::-webkit-input-placeholder, 
 textarea::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
     color:    #fff;
@@ -148,4 +156,15 @@ button#nexto-search-btn {
 .nexto-newsletter input::placeholder{ /* Most modern browsers support this now. */
    color:    #13111A;
    opacity: 0.5;
+}
+
+#nexto-form-submit-btn{
+  width: 180px;
+  height: 55px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.4s;
+  background: linear-gradient(225deg,#0080ff 0,#7d41ea 46.35%,#ff00d4 100%);
+  border-radius: 10px;
 }
