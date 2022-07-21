@@ -1,0 +1,43 @@
+.nexto-team-section.nexto-team-two.team-page{
+  padding: 0;
+}
+.team-page{
+  .nexto-breadcrumbs-data {
+    max-width: 880px;
+}
+}
+.nexto-team-column {
+  border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+  padding-bottom: 115px;
+  @include max(991px) {
+    padding-bottom: 100px;
+  }
+  @include max(767px) {
+    padding-bottom: 80px;
+  }
+
+}
+.nexto-team-button {
+  text-align: center;
+  margin-top: 40px;
+  @include max(991px) {
+    margin: 0;
+  }
+}
+
+.nexto-team-section.nexto-team-two.dark-version{
+  padding: 0 0 80px;
+}
+
+.dark-version{
+  .nexto-team-data h4{
+    color: #fff;
+  }
+  p{
+    margin-bottom: 20px;
+    color: #fff!important;
+  }
+  .nexto-social-icon{
+    margin-top: 0;
+  }
+}

@@ -263,3 +263,28 @@ footer.nexto-foote2-section {
     }
   }
 }
+
+// footer four
+footer.nexto-footer-section.white-version{
+  background-color: #fff;
+  .nexto-textarea p{
+    color: #13111A;
+  }
+  
+  .nexto-footer-menu {
+    span{
+      color: #13111A;
+    }
+    ul{
+      li{
+        a{
+          color: #13111A;
+        }
+      }
+    }
+  }
+  .nexto-footer-bottom p{
+    color: #13111A;
+  }
+}
+

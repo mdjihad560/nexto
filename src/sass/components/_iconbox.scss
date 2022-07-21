@@ -162,3 +162,23 @@
   
   }
 }
+
+.nexto-iconbox-wrap5{
+  background: #211D2E;
+border-radius: 10px;
+  .nexto-iconbox{
+    &-thumb{
+      background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+    }
+  &-data{
+    a{
+      font-weight: 700;
+      font-size: 16px;
+      color: #FFFFFF;
+      img{
+        margin-left: 10px;
+      }
+    }
+  }
+  }
+}

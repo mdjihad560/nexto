@@ -107,3 +107,20 @@
   
 }
 
+.nexto-social-icon5 {
+  ul{
+    li{
+      a{
+        background-color: #ECECED;
+        path{
+          fill: #13111A;
+          transition: all 0.4s;
+        }
+        &:hover path{
+          fill: white;
+        }
+      }
+    }
+  }
+}
+

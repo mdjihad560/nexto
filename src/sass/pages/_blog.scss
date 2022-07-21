@@ -51,14 +51,14 @@
 }
 
 // blog filter section2
-.nexto-blog-section{
+.nexto-inner-section{
   z-index: 0;
   position: relative;
-  &.blog-dark-version{
-    background-color: var(--gray-800);
-  }
 }
-.nexto-single-blog-section{
+.dark-version{
+  background-color: var(--gray-800);
+}
+.nexto-blog-sidebar-section{
   &.light-version{
     padding-bottom: 120px;
     @include max(991px) {
@@ -255,7 +255,7 @@
 
 // blog light versions
 
-.blog-light-version{
+.light-version{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) -51.59%, #EEE6D0 119.2%);
   .nexto-breadcrumbs-data{
     h1, 
@@ -474,7 +474,7 @@
   }
 }
 
-.nexto-single-blog-section img{
+.nexto-single-thumb{
   margin-bottom: 80px;
   @include max(991px) {
     margin-bottom: 40px;
