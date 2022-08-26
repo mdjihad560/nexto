@@ -3,8 +3,24 @@
   
   /*------------------------------------------------------------------
   [Table of contents]
+
+  STICKY MENU JS INIT
+  COUNTER JS INIT
+  COUNTER TWO JS INIT
+  NEXTO SLIDER ONE
+  NEXTO SLIDER TWO
+  NEXTO TEXT SLIDER
+  NEXTO SWIPER SLIDER JS INIT
+  SCROLL EFFECT ONE JS INIT
+  SCROLL EFFECT TWO JS INIT
+  SCROLL EFFECT THREE JS INIT
+  MAGNIFIC POPUP JS INIT
+  CARD LIKE JS INIT
+  FOUR COLUMN FILTER JS INIT
+  TWO COLUMN FILTER JS INIT
   
   -------------------------------------------------------------------*/
+  
   
   /*--------------------------------------------------------------
   CUSTOM PRE DEFINE FUNCTION
@@ -140,8 +156,8 @@ var nexto_slider_one = $('.nexto-slider-one');
     });
   }
 
-  /*--------------------------------------------------------------
-NEXTO SLIDER ONE
+/*--------------------------------------------------------------
+NEXTO SLIDER TWO
 --------------------------------------------------------------*/
 var nexto_slider_two = $('.nexto-slider-two');
 if( nexto_slider_two.is_exist()){
@@ -260,7 +276,7 @@ if(nexto_client_slider.is_exist()){
 }
 
 /*--------------------------------------------------------------
-YOUTUBE MAGNIFIC POPUP JS INIT
+NEXTO SWIPER SLIDER JS INIT
 ------------------------------------------------------------*/
 var swiper_slider = $('.nexto-swiper-slider');
 if (swiper_slider.is_exist()){
@@ -303,7 +319,7 @@ $win.on('scroll', function () {
 });
 
 /*--------------------------------------------------------------
-YOUTUBE MAGNIFIC POPUP JS INIT
+MAGNIFIC POPUP JS INIT
 ------------------------------------------------------------*/
 var popup_youtube = $('.nexto-popup');
   if (popup_youtube.is_exist()){
@@ -313,8 +329,9 @@ var popup_youtube = $('.nexto-popup');
   });
 
 }
-
-// card like js
+/*--------------------------------------------------------------
+CARD LIKE JS INIT
+------------------------------------------------------------*/
 const nextoBtnTigger = document.querySelectorAll('.nexto-tigger');
   nextoBtnTigger.forEach(linkbtn => {
     linkbtn.addEventListener('click', () => {
@@ -332,9 +349,6 @@ const nextoBtnTigger = document.querySelectorAll('.nexto-tigger');
   
   
   $(window).on("load" ,function(){
-  
-
-
   
   /*--------------------------------------------------------------
   FOUR COLUMN FILTER JS INIT
